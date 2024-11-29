@@ -1,0 +1,14 @@
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\bin\Debug\net8.0\NumbersInCSharp.exe
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\bin\Debug\net8.0\NumbersInCSharp.deps.json
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\bin\Debug\net8.0\NumbersInCSharp.runtimeconfig.json
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\bin\Debug\net8.0\NumbersInCSharp.dll
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\bin\Debug\net8.0\NumbersInCSharp.pdb
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.AssemblyInfoInputs.cache
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.AssemblyInfo.cs
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.csproj.CoreCompileInputs.cache
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.dll
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\refint\NumbersInCSharp.dll
+c:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.pdb
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\NumbersInCSharp.genruntimeconfig.cache
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\NumbersInCSharp\obj\Debug\net8.0\ref\NumbersInCSharp.dll
