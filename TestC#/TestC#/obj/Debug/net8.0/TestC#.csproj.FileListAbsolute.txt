@@ -1,0 +1,14 @@
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\bin\Debug\net8.0\TestC#.exe
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\bin\Debug\net8.0\TestC#.deps.json
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\bin\Debug\net8.0\TestC#.runtimeconfig.json
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\bin\Debug\net8.0\TestC#.dll
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\bin\Debug\net8.0\TestC#.pdb
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.AssemblyInfoInputs.cache
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.AssemblyInfo.cs
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.csproj.CoreCompileInputs.cache
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.dll
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\refint\TestC#.dll
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.pdb
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\TestC#.genruntimeconfig.cache
+C:\Users\rforte\OneDrive\CURSO .NET EN EDUCACION IT\TestC#\TestC#\obj\Debug\net8.0\ref\TestC#.dll
