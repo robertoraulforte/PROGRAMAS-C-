@@ -1,0 +1,2960 @@
+
+
+
+PREGUNTAS SOBRE C#
+
+
+
+Comprobación de conocimientos
+
+1. ¿Cuál es el principal trabajo del compilador? 
+
+El compilador principalmente busca errores ortográficos en el código.
+
+El compilador principalmente ejecuta el código.
+
+El compilador principalmente convierte el código a un formato ejecutable que el equipo pueda entender.
+2. ¿Cuál de las siguientes afirmaciones sobre C# es verdadera? 
+
+C# no distingue mayúsculas de minúsculas.
+
+Console es un método y WriteLine() es una clase.
+
+Use comillas dobles para crear una cadena de literal.
+3. ¿Qué problema hay en esta línea de código? Console.WriteLine("What is wrong with me?") 
+
+La L de WriteLine debe aparecer en minúsculas.
+
+Falta un punto y coma al final.
+
+La cadena debe usar comillas simples.
+
+
+
+
+
+Aquí tienes las respuestas a las preguntas de la comprobación de conocimientos sobre C#:
+
+1. **¿Cuál es el principal trabajo del compilador?**
+   - **Respuesta correcta**: El compilador principalmente convierte el código a un formato ejecutable que el equipo pueda entender.
+
+2. **¿Cuál de las siguientes afirmaciones sobre C# es verdadera?**
+   - **Respuesta correcta**: Use comillas dobles para crear una cadena de literal.
+
+3. **¿Qué problema hay en esta línea de código? `Console.WriteLine("What is wrong with me?")`**
+   - **Respuesta correcta**: Falta un punto y coma al final.
+
+
+
+
+**************
+
+
+MODULO 1 :
+
+
+
+
+¿Cuál es válida?
+
+Grupo de elecciones de respuesta
+
+Console.WriteLine("Hola mundo!");
+
+Write("HolaMundo!")
+
+Console.Write(Hola mundo!);
+
+Console.Write("Hola mundo!")
+
+WriteLine("Hola mundo!")
+
+
+
+La respuesta válida es:
+
+```csharp
+Console.WriteLine("Hola mundo!");
+```
+
+Esta es la sintaxis correcta en C# para imprimir un mensaje en la consola con un salto de línea al final.
+
+
+
+
+PREGUNTA 2
+
+
+Dado el siguiente fragmento de código:
+var nombre = "Juan";
+var apellido = "Pérez";
+¿Cuál de las siguientes opciones es válida?
+Grupo de elecciones de respuesta
+
+Write(@"Hola {nombre} {apellido}");
+
+Console.WriteLine(@"Hola {nombre} {apellido}");
+
+WriteLine("Hola " + nombre + " " + apellido);
+
+Console.WriteLine($"Hola {nombre} {apellido}");
+
+Write($"Hola {nombre} {apellido}");
+
+
+
+La respuesta válida es:
+
+```csharp
+Console.WriteLine($"Hola {nombre} {apellido}");
+```
+
+Esta opción usa **interpolación de cadenas** (la `$` antes de las comillas dobles) para insertar los valores de las variables `nombre` y `apellido` dentro de la cadena.
+
+
+
+
+Pregunta 3
+
+
+En esta línea de código hay 5 espacios antes y 5 después del nombre "Juan". Indica verdadero o falso en cada expresión.
+
+var n = "     Juan     ";
+Grupo de elecciones de respuesta
+n.Length == 4
+
+[ Seleccionar ]
+n.Trim() == "Juan"
+
+[ Seleccionar ]
+n.TrimStart().Length == 9
+
+[ Seleccionar ]
+n.TrimEnd().Length == 5
+
+[ Seleccionar ]
+n.Trim().Length == 4
+
+[ Seleccionar ]
+
+
+
+Vamos a analizar cada afirmación:
+
+1. **`n.Length == 4`** - **Falso**  
+   `n` contiene 5 espacios antes y 5 después del nombre "Juan", por lo que su longitud total es 14 (5 + 4 + 5).
+
+2. **`n.Trim() == "Juan"`** - **Verdadero**  
+   `Trim()` elimina los espacios al inicio y al final de la cadena, dejando solo "Juan".
+
+3. **`n.TrimStart().Length == 9`** - **Verdadero**  
+   `TrimStart()` elimina solo los espacios al inicio, dejando la cadena como `"Juan     "`, que tiene una longitud de 9.
+
+4. **`n.TrimEnd().Length == 5`** - **Falso**  
+   `TrimEnd()` elimina los espacios al final, dejando la cadena como `"     Juan"`, que tiene una longitud de 9.
+
+5. **`n.Trim().Length == 4`** - **Verdadero**  
+   `Trim()` elimina todos los espacios al inicio y al final, dejando solo "Juan", que tiene una longitud de 4.
+
+### Resumen de respuestas:
+- `n.Length == 4` - **Falso**
+- `n.Trim() == "Juan"` - **Verdadero**
+- `n.TrimStart().Length == 9` - **Verdadero**
+- `n.TrimEnd().Length == 5` - **Falso**
+- `n.Trim().Length == 4` - **Verdadero**
+
+
+
+
+Pregunta 4
+
+
+Dada esta línea de código...
+
+var nya = "Juan Perez";
+...indica verdadero o falso en cada caso.
+Grupo de elecciones de respuesta
+nya.Replace("Juan", "Lorena") == "Lorena Perez"
+
+[ Seleccionar ]
+nya.IndexOf("p") == 4
+
+[ Seleccionar ]
+nya.Substring(5) == "Perez"
+
+[ Seleccionar ]
+nya.Split(' ')[1] == "Juan"
+
+[ Seleccionar ]
+nya.Contains("an Pe")
+
+[ Seleccionar ]
+
+
+Vamos a analizar cada afirmación dada la cadena `nya = "Juan Perez"`:
+
+1. **`nya.Replace("Juan", "Lorena") == "Lorena Perez"`** - **Verdadero**  
+   `Replace("Juan", "Lorena")` reemplaza "Juan" por "Lorena", resultando en `"Lorena Perez"`.
+
+2. **`nya.IndexOf("p") == 4`** - **Falso**  
+   La búsqueda de `"p"` distingue entre mayúsculas y minúsculas. En `"Juan Perez"`, la letra `"P"` mayúscula está en la posición 5 (índice 5), por lo que `nya.IndexOf("p")` devolvería `-1` porque no encuentra una `"p"` minúscula.
+
+3. **`nya.Substring(5) == "Perez"`** - **Verdadero**  
+   `Substring(5)` toma la subcadena desde el índice 5, resultando en `"Perez"`.
+
+4. **`nya.Split(' ')[1] == "Juan"`** - **Falso**  
+   `nya.Split(' ')[1]` devuelve el segundo elemento tras dividir la cadena por espacio, que es `"Perez"` en este caso, no `"Juan"`.
+
+5. **`nya.Contains("an Pe")`** - **Verdadero**  
+   `"Juan Perez"` contiene la subcadena `"an Pe"`, por lo que esta afirmación es verdadera.
+
+### Resumen de respuestas:
+- `nya.Replace("Juan", "Lorena") == "Lorena Perez"` - **Verdadero**
+- `nya.IndexOf("p") == 4` - **Falso**
+- `nya.Substring(5) == "Perez"` - **Verdadero**
+- `nya.Split(' ')[1] == "Juan"` - **Falso**
+- `nya.Contains("an Pe")` - **Verdadero**
+
+
+
+
+Pregunta 5
+
+
+Elije el tipo de datos más apropiado para almacenar...
+
+OPCIONES :  TimeSapn, decimal, string, DateTime, int
+
+Grupo de elecciones de respuesta
+El precio de un producto
+
+[ Seleccionar ]
+La duración de un vuelo
+
+[ Seleccionar ]
+Cantidad de pasajeros
+
+[ Seleccionar ]
+La fecha y hora de salida de un tren
+
+[ Seleccionar ]
+El nombre de un pasajero
+
+[ Seleccionar ]
+Peso de un paquete
+
+[ Seleccionar ]
+El tiempo transcurrido entre dos fechas
+
+[ Seleccionar ]
+Una fecha de cumpleaños
+
+[ Seleccionar ]
+La descripcion de un producto
+
+[ Seleccionar ]
+Distancia recorrida
+
+[ Seleccionar ]
+
+
+
+Aquí tienes los tipos de datos más apropiados para cada caso:
+
+1. **El precio de un producto** - **decimal**  
+   Para representar valores monetarios, `decimal` es adecuado debido a su precisión en cálculos financieros.
+
+2. **La duración de un vuelo** - **TimeSpan**  
+   `TimeSpan` es adecuado para representar un intervalo de tiempo, como la duración de un vuelo.
+
+3. **Cantidad de pasajeros** - **int**  
+   La cantidad de pasajeros es un número entero, por lo que `int` es apropiado.
+
+4. **La fecha y hora de salida de un tren** - **DateTime**  
+   `DateTime` permite almacenar tanto la fecha como la hora.
+
+5. **El nombre de un pasajero** - **string**  
+   Para el nombre de una persona, el tipo `string` es el más adecuado.
+
+6. **Peso de un paquete** - **decimal**  
+   `decimal` es apropiado para valores que requieren precisión, como el peso.
+
+7. **El tiempo transcurrido entre dos fechas** - **TimeSpan**  
+   `TimeSpan` representa la diferencia de tiempo entre dos fechas.
+
+8. **Una fecha de cumpleaños** - **DateTime**  
+   `DateTime` es adecuado para almacenar fechas específicas, como cumpleaños.
+
+9. **La descripción de un producto** - **string**  
+   `string` es adecuado para texto, como una descripción de producto.
+
+10. **Distancia recorrida** - **decimal**  
+    `decimal` es adecuado para representar una distancia con precisión.
+
+### Resumen:
+- El precio de un producto - **decimal**
+- La duración de un vuelo - **TimeSpan**
+- Cantidad de pasajeros - **int**
+- La fecha y hora de salida de un tren - **DateTime**
+- El nombre de un pasajero - **string**
+- Peso de un paquete - **decimal**
+- El tiempo transcurrido entre dos fechas - **TimeSpan**
+- Una fecha de cumpleaños - **DateTime**
+- La descripción de un producto - **string**
+- Distancia recorrida - **decimal**
+
+
+
+
+
+Pregunta 6
+Dado el siguiente código...
+
+var ingreso = Console.ReadLine();
+if(int.TryParse(ingreso, out int resultado))
+{
+     Console.WriteLine(resultado);
+}
+Indica verdadero o falso en cada caso.
+Grupo de elecciones de respuesta
+Si ingreso "Hola" se produce un error.
+
+[ Seleccionar ]
+Si ingreso "Hola" se muestra un 0.
+
+[ Seleccionar ]
+Si ingreso "5" se muestra 5.
+
+[ Seleccionar ]
+Si presiono enter sin ingresar nada se produce un error
+
+[ Seleccionar ]
+Si ingreso "3.14" se muestra 3.
+
+[ Seleccionar ]
+
+
+
+Vamos a analizar cada afirmación dada el código:
+
+```csharp
+var ingreso = Console.ReadLine();
+if(int.TryParse(ingreso, out int resultado))
+{
+     Console.WriteLine(resultado);
+}
+```
+
+1. **Si ingreso "Hola" se produce un error.** - **Falso**  
+   `int.TryParse` intenta convertir `"Hola"` en un entero, pero al no ser un valor válido, simplemente devuelve `false` y no se ejecuta `Console.WriteLine(resultado)`. No se produce un error, solo no se muestra ningún resultado.
+
+2. **Si ingreso "Hola" se muestra un 0.** - **Falso**  
+   Dado que `"Hola"` no se puede convertir a entero, `TryParse` devuelve `false`, y el bloque `Console.WriteLine(resultado);` no se ejecuta. Por lo tanto, no se muestra nada.
+
+3. **Si ingreso "5" se muestra 5.** - **Verdadero**  
+   `"5"` es un valor válido para `int.TryParse`, por lo que se convierte correctamente en `int` y se almacena en `resultado`, mostrándose como `5`.
+
+4. **Si presiono enter sin ingresar nada se produce un error.** - **Falso**  
+   `int.TryParse` devuelve `false` si la entrada está vacía, y no se produce un error. Simplemente no se ejecuta `Console.WriteLine(resultado);`.
+
+5. **Si ingreso "3.14" se muestra 3.** - **Falso**  
+   `"3.14"` no es un valor entero válido para `int.TryParse`, por lo que `TryParse` devuelve `false`, y el bloque `Console.WriteLine(resultado);` no se ejecuta.
+
+### Resumen de respuestas:
+- Si ingreso "Hola" se produce un error. - **Falso**
+- Si ingreso "Hola" se muestra un 0. - **Falso**
+- Si ingreso "5" se muestra 5. - **Verdadero**
+- Si presiono enter sin ingresar nada se produce un error. - **Falso**
+- Si ingreso "3.14" se muestra 3. - **Falso**
+
+
+
+
+
+Pregunta 7
+
+
+Qué opción es correcta aquí?????
+{
+    var ingreso = Console.ReadLine();
+    if (int.TryParse(ingreso, out var valor))
+    {
+          total += valor;
+    }
+    else
+    {
+          ok = false;
+    }
+}
+Grupo de elecciones de respuesta
+
+do(ok)
+
+do(!ok)
+
+while(ok)
+
+do while (ok)
+
+while(!ok)
+
+
+
+
+
+Dado el contexto del código, parece que `ok` se utiliza como una variable de control para verificar si la entrada es válida. En este caso, la opción correcta sería **`while(ok)`** si deseas continuar el bucle mientras `ok` es `true`.
+
+Aquí tienes cómo se vería el código completo con la opción seleccionada:
+
+```csharp
+bool ok = true;
+int total = 0;
+
+while (ok)
+{
+    var ingreso = Console.ReadLine();
+    if (int.TryParse(ingreso, out var valor))
+    {
+        total += valor; // Suma el valor ingresado al total si es un número válido
+    }
+    else
+    {
+        ok = false; // Cambia ok a false si la entrada no es un número válido
+    }
+}
+
+Console.WriteLine($"Total acumulado: {total}");
+```
+
+### Explicación:
+- **`while (ok)`** mantendrá el bucle en ejecución mientras `ok` sea `true`.
+- Si el usuario ingresa un valor no numérico, `int.TryParse` falla y `ok` se establece en `false`, saliendo así del bucle.
+
+**Resumen**: La opción correcta es **`while(ok)`**.
+
+
+
+
+
+Pregunta 8
+
+
+Este código debe permitir el ingreso de exactamente 10 números enteros válidos:
+
+bool ok;
+var valores = new List<int>();
+                                                     //Qué opción va aquí?
+{
+    do
+    {
+        var ingreso = Console.ReadLine();
+        ok = int.TryParse(ingreso, out var valor);
+        if (ok)
+        {
+            valores.Add(valor);
+        }
+    } while (!ok);
+}
+Grupo de elecciones de respuesta
+
+for (var i = 0; i < 9; i++)
+
+for (var i = 1; i < 10; i++)
+
+for (var i = 0; i < 10; i++)
+
+for (var i = 0; i <= 10; i++)
+
+for (var i = 1; i <= 9; i++)
+
+
+
+Para permitir el ingreso de exactamente 10 números enteros válidos, necesitas un bucle `for` que se ejecute 10 veces, añadiendo un valor entero a la lista `valores` en cada iteración si el número es válido. 
+
+La opción correcta es:
+
+**`for (var i = 0; i < 10; i++)`**
+
+Esta opción permite que el bucle se ejecute 10 veces (desde `i = 0` hasta `i = 9` inclusive), que es exactamente lo que se requiere.
+
+Aquí está el código completo:
+
+```csharp
+bool ok;
+var valores = new List<int>();
+
+for (var i = 0; i < 10; i++) // Ejecuta el bucle 10 veces
+{
+    do
+    {
+        var ingreso = Console.ReadLine();
+        ok = int.TryParse(ingreso, out var valor);
+        if (ok)
+        {
+            valores.Add(valor); // Agrega el valor a la lista si es un entero válido
+        }
+    } while (!ok); // Repite hasta que el ingreso sea válido
+}
+
+// Mostrar los valores ingresados
+Console.WriteLine("Valores ingresados:");
+foreach (var val in valores)
+{
+    Console.WriteLine(val);
+}
+```
+
+### Explicación:
+- **`for (var i = 0; i < 10; i++)`** asegura que el bucle externo se ejecute exactamente 10 veces, solicitando al usuario un número en cada iteración.
+- El bucle `do...while` en el interior garantiza que el programa siga solicitando un valor hasta que el usuario ingrese un número entero válido.
+
+### Resumen:
+La opción correcta es **`for (var i = 0; i < 10; i++)`**.
+
+
+
+
+
+
+Pregunta 9
+
+
+Responde verdadero o falso, de acuerdo a la siguiente expresión:
+
+var numeros = Enumerable.Range(0, 100)
+                        .Skip(10)
+                        .Where(n => n % 2 == 0)
+                        .Take(20)
+                        .ToList();
+Grupo de elecciones de respuesta
+numeros es List<decimal>
+
+[ Seleccionar ]
+numeros es List<int>
+
+[ Seleccionar ]
+numeros es una lista de numeros impares
+
+[ Seleccionar ]
+numeros contiene 10 elementos
+
+[ Seleccionar ]
+el primer elemento de numeros es 10
+
+[ Seleccionar ]
+el primer elemento de numeros es 12
+
+[ Seleccionar ]
+numeros contiene 20 elementos
+
+[ Seleccionar ]
+el ultimo elemento de numeros es par
+
+[ Seleccionar ]
+no pueden agregarse elementos a numeros después de esta instrucción
+
+[ Seleccionar ]
+los valores de numeros pueden ser modificados después de esta instrucción
+
+[ Seleccionar ]
+
+
+
+
+Vamos a analizar cada afirmación con el código proporcionado:
+
+```csharp
+var numeros = Enumerable.Range(0, 100)
+                        .Skip(10)
+                        .Where(n => n % 2 == 0)
+                        .Take(20)
+                        .ToList();
+```
+
+1. **numeros es List<decimal>** - **Falso**  
+   `numeros` es una lista de enteros (`List<int>`) porque `Enumerable.Range` genera una secuencia de enteros.
+
+2. **numeros es List<int>** - **Verdadero**  
+   `ToList()` convierte la secuencia en una lista de enteros (`List<int>`).
+
+3. **numeros es una lista de numeros impares** - **Falso**  
+   La condición `Where(n => n % 2 == 0)` filtra solo los números pares.
+
+4. **numeros contiene 10 elementos** - **Falso**  
+   `Take(20)` selecciona los primeros 20 números pares después de omitir los primeros 10 elementos de la secuencia original, por lo que la lista tendrá 20 elementos.
+
+5. **el primer elemento de numeros es 10** - **Verdadero**  
+   Después de `Skip(10)`, el primer número en la secuencia es `10`, y es el primer elemento en `numeros` debido a la condición `Where(n => n % 2 == 0)`.
+
+6. **el primer elemento de numeros es 12** - **Falso**  
+   Como mencionamos antes, el primer elemento es `10`, no `12`.
+
+7. **numeros contiene 20 elementos** - **Verdadero**  
+   `Take(20)` asegura que la lista tenga exactamente 20 elementos.
+
+8. **el ultimo elemento de numeros es par** - **Verdadero**  
+   Todos los elementos de `numeros` son pares debido a `Where(n => n % 2 == 0)`.
+
+9. **no pueden agregarse elementos a numeros después de esta instrucción** - **Falso**  
+   `numeros` es una lista (`List<int>`), y se pueden agregar elementos a una lista después de su creación usando métodos como `Add()`.
+
+10. **los valores de numeros pueden ser modificados después de esta instrucción** - **Verdadero**  
+    `numeros` es una lista mutable, por lo que los elementos se pueden modificar después de la creación.
+
+### Resumen de respuestas:
+- numeros es List<decimal> - **Falso**
+- numeros es List<int> - **Verdadero**
+- numeros es una lista de numeros impares - **Falso**
+- numeros contiene 10 elementos - **Falso**
+- el primer elemento de numeros es 10 - **Verdadero**
+- el primer elemento de numeros es 12 - **Falso**
+- numeros contiene 20 elementos - **Verdadero**
+- el ultimo elemento de numeros es par - **Verdadero**
+- no pueden agregarse elementos a numeros después de esta instrucción - **Falso**
+- los valores de numeros pueden ser modificados después de esta instrucción - **Verdadero**
+
+
+
+
+
+Pregunta 10
+
+
+Marca sólo las combinaciones válidas.
+Grupo de elecciones de respuesta
+
+public private class Persona
+
+public class Persona
+
+internal abstract class Vehiculo
+
+private int CantidadProductos { get; set; }
+
+private class Persona
+
+protected internal Total { get; set; }
+
+internal abstract interface IMedioPago
+
+public sealed abstract class Vehiculo
+
+public interface IMedioPago
+
+private interface IPrecio
+
+protected virtual decimal CalcularPrecio()
+
+protected virtual internal decimal TotalNeto()
+
+
+
+
+A continuación, analizaremos cada opción para determinar cuáles son válidas en C#:
+
+1. **`public private class Persona`** - **Inválido**  
+   No se puede combinar `public` y `private` en una declaración de clase, ya que estos modificadores son mutuamente excluyentes.
+
+2. **`public class Persona`** - **Válido**  
+   `public` es un modificador de acceso válido para una clase.
+
+3. **`internal abstract class Vehiculo`** - **Válido**  
+   `internal` y `abstract` son modificadores válidos para una clase.
+
+4. **`private int CantidadProductos { get; set; }`** - **Válido**  
+   `private` es un modificador de acceso válido para una propiedad.
+
+5. **`private class Persona`** - **Válido**  
+   `private` es un modificador de acceso válido para una clase, aunque esta solo puede estar dentro de otra clase (anidada).
+
+6. **`protected internal Total { get; set; }`** - **Inválido**  
+   La declaración no tiene tipo de dato (`int`, `decimal`, etc.), lo cual es necesario para que la propiedad sea válida.
+
+7. **`internal abstract interface IMedioPago`** - **Inválido**  
+   Una interfaz no puede ser `abstract` ya que todas sus implementaciones son implícitamente abstractas.
+
+8. **`public sealed abstract class Vehiculo`** - **Inválido**  
+   `sealed` y `abstract` son mutuamente excluyentes, ya que `sealed` impide la herencia mientras que `abstract` requiere que la clase sea heredada.
+
+9. **`public interface IMedioPago`** - **Válido**  
+   `public` es un modificador válido para una interfaz.
+
+10. **`private interface IPrecio`** - **Válido**  
+    `private` es válido para una interfaz, aunque solo si es una interfaz anidada dentro de otra clase.
+
+11. **`protected virtual decimal CalcularPrecio()`** - **Válido**  
+    `protected` y `virtual` son modificadores válidos para un método.
+
+12. **`protected virtual internal decimal TotalNeto()`** - **Válido**  
+    `protected` y `internal` pueden combinarse con `virtual` en un método.
+
+### Resumen de combinaciones válidas:
+- `public class Persona`
+- `internal abstract class Vehiculo`
+- `private int CantidadProductos { get; set; }`
+- `private class Persona`
+- `public interface IMedioPago`
+- `private interface IPrecio`
+- `protected virtual decimal CalcularPrecio()`
+- `protected virtual internal decimal TotalNeto()`
+
+
+
+PREGUNTAS CORRECTAS :
+
+
+
+Historial de intentos
+Intento	Hora	Puntuación
+MÁS RECIENTE	Intento 1	32 minutos	92,71 de 100
+Puntuación para este intento: 92,71 de 100
+Entregado 14 de nov a las 12:39
+Este intento ha tenido una duración de 32 minutos.
+ 
+Pregunta 1
+10 / 10 puntos
+¿Cuál es válida?
+
+¡Correcto!
+  Console.WriteLine("Hola mundo!"); 
+  Write("HolaMundo!") 
+  Console.Write(Hola mundo!); 
+  Console.Write("Hola mundo!") 
+  WriteLine("Hola mundo!") 
+ 
+
+
+Pregunta 2
+10 / 10 puntos
+Dado el siguiente fragmento de código:
+var nombre = "Juan";
+var apellido = "Pérez";
+¿Cuál de las siguientes opciones es válida?
+  Write(@"Hola {nombre} {apellido}"); 
+  Console.WriteLine(@"Hola {nombre} {apellido}"); 
+  WriteLine("Hola " + nombre + " " + apellido); 
+¡Correcto!
+  Console.WriteLine($"Hola {nombre} {apellido}"); 
+  Write($"Hola {nombre} {apellido}"); 
+ 
+
+
+
+Pregunta 3
+10 / 10 puntos
+En esta línea de código hay 5 espacios antes y 5 después del nombre "Juan". Indica verdadero o falso en cada expresión.
+
+var n = "     Juan     ";
+¡Correcto!
+n.Length == 4 
+Falso
+¡Correcto!
+n.Trim() == "Juan" 
+Verdadero
+¡Correcto!
+n.TrimStart().Length == 9 
+Verdadero
+¡Correcto!
+n.TrimEnd().Length == 5 
+Falso
+¡Correcto!
+n.Trim().Length == 4 
+Verdadero
+ 
+
+
+
+
+Pregunta 4
+10 / 10 puntos
+Dada esta línea de código...
+
+var nya = "Juan Perez";
+...indica verdadero o falso en cada caso.
+¡Correcto!
+nya.Replace("Juan", "Lorena") == "Lorena Perez" 
+Verdadero
+¡Correcto!
+nya.IndexOf("p") == 4 
+Falso
+¡Correcto!
+nya.Substring(5) == "Perez" 
+Verdadero
+¡Correcto!
+nya.Split(' ')[1] == "Juan" 
+Falso
+¡Correcto!
+nya.Contains("an Pe") 
+Verdadero
+ 
+
+
+
+Pregunta 5
+9 / 10 puntos
+Elije el tipo de datos más apropiado para almacenar...
+¡Correcto!
+El precio de un producto 
+decimal
+¡Correcto!
+La duración de un vuelo 
+TimeSpan
+¡Correcto!
+Cantidad de pasajeros 
+int
+Respondido
+La fecha y hora de salida de un tren 
+DateTime
+  
+TimeSpan
+¡Correcto!
+El nombre de un pasajero 
+string
+¡Correcto!
+Peso de un paquete 
+decimal
+¡Correcto!
+El tiempo transcurrido entre dos fechas 
+TimeSpan
+¡Correcto!
+Una fecha de cumpleaños 
+DateTime
+¡Correcto!
+La descripcion de un producto 
+string
+¡Correcto!
+Distancia recorrida 
+decimal
+ 
+
+
+
+Pregunta 6
+8 / 10 puntos
+Dado el siguiente código...
+
+var ingreso = Console.ReadLine();
+if(int.TryParse(ingreso, out int resultado))
+{
+     Console.WriteLine(resultado);
+}
+Indica verdadero o falso en cada caso.
+¡Correcto!
+Si ingreso "Hola" se produce un error. 
+Falso
+Respondido
+Si ingreso "Hola" se muestra un 0. 
+Falso
+  
+Verdadero
+¡Correcto!
+Si ingreso "5" se muestra 5. 
+Verdadero
+¡Correcto!
+Si presiono enter sin ingresar nada se produce un error 
+Falso
+¡Correcto!
+Si ingreso "3.14" se muestra 3. 
+Falso
+
+
+
+ 
+Pregunta 7
+10 / 10 puntos
+Qué opción es correcta aquí?????
+{
+    var ingreso = Console.ReadLine();
+    if (int.TryParse(ingreso, out var valor))
+    {
+          total += valor;
+    }
+    else
+    {
+          ok = false;
+    }
+}
+  do(ok) 
+  do(!ok) 
+¡Correcto!
+  while(ok) 
+  do while (ok) 
+  while(!ok) 
+ 
+
+
+
+Pregunta 8
+10 / 10 puntos
+Este código debe permitir el ingreso de exactamente 10 números enteros válidos:
+
+bool ok;
+var valores = new List<int>();
+                                                     //Qué opción va aquí?
+{
+    do
+    {
+        var ingreso = Console.ReadLine();
+        ok = int.TryParse(ingreso, out var valor);
+        if (ok)
+        {
+            valores.Add(valor);
+        }
+    } while (!ok);
+}
+  for (var i = 0; i < 9; i++) 
+  for (var i = 1; i < 10; i++) 
+¡Correcto!
+  for (var i = 0; i < 10; i++) 
+  for (var i = 0; i <= 10; i++) 
+  for (var i = 1; i <= 9; i++) 
+ 
+
+
+
+Pregunta 9
+10 / 10 puntos
+Responde verdadero o falso, de acuerdo a la siguiente expresión:
+
+var numeros = Enumerable.Range(0, 100)
+                        .Skip(10)
+                        .Where(n => n % 2 == 0)
+                        .Take(20)
+                        .ToList();
+¡Correcto!
+numeros es List<decimal> 
+Falso
+¡Correcto!
+numeros es List<int> 
+Verdadero
+¡Correcto!
+numeros es una lista de numeros impares 
+Falso
+¡Correcto!
+numeros contiene 10 elementos 
+Falso
+¡Correcto!
+el primer elemento de numeros es 10 
+Verdadero
+¡Correcto!
+el primer elemento de numeros es 12 
+Falso
+¡Correcto!
+numeros contiene 20 elementos 
+Verdadero
+¡Correcto!
+el ultimo elemento de numeros es par 
+Verdadero
+¡Correcto!
+no pueden agregarse elementos a numeros después de esta instrucción 
+Falso
+¡Correcto!
+los valores de numeros pueden ser modificados después de esta instrucción 
+Verdadero
+ 
+
+
+
+Pregunta 10
+5,71 / 10 puntos
+Marca sólo las combinaciones válidas.
+  public private class Persona 
+
+¡Correcto!
+  public class Persona 
+
+¡Correcto!
+  internal abstract class Vehiculo 
+
+¡Correcto!
+  private int CantidadProductos { get; set; } 
+
+Respondido
+  private class Persona 
+Respuesta correcta
+  protected internal Total { get; set; } 
+
+
+  internal abstract interface IMedioPago 
+  public sealed abstract class Vehiculo 
+
+¡Correcto!
+  public interface IMedioPago 
+
+
+Respondido
+  private interface IPrecio 
+¡Correcto!
+  protected virtual decimal CalcularPrecio() 
+
+
+¡Correcto!
+  protected virtual internal decimal TotalNeto() 
+
+Puntuación de la prueba: 92,71 de 100
+Información sobre el último intento:
+
+
+
+
+
+*********************
+
+
+
+MODULO 2  :
+
+
+
+Pregunta 110 puntos
+Relaciona los términos
+Grupo de elecciones de respuesta
+REST
+
+[ Seleccionar ]
+XML / JSON
+
+[ Seleccionar ]
+HTTP
+
+[ Seleccionar ]
+API
+
+[ Seleccionar ]
+SOAP
+
+[ Seleccionar ]
+Local
+
+[ Seleccionar ]
+Remoto
+
+[ Seleccionar ]
+GET
+
+[ Seleccionar ]
+POST
+
+[ Seleccionar ]
+PUT
+
+[ Seleccionar ]
+DELETE
+
+[ Seleccionar ]
+CSV / Texto plano
+
+[ Seleccionar ]
+
+
+RESPUESTAS :  INTERFAZ, ACCESO, METODO, PROTOCOLO, ARQUITECTURA, FORMATO.
+
+
+
+Aquí tienes la relación correcta de los términos proporcionados con las respuestas adecuadas (**INTERFAZ, ACCESO, MÉTODO, PROTOCOLO, ARQUITECTURA, FORMATO**):
+
+1. **REST**  
+   Respuesta: **ARQUITECTURA**
+
+2. **XML / JSON**  
+   Respuesta: **FORMATO**
+
+3. **HTTP**  
+   Respuesta: **PROTOCOLO**
+
+4. **API**  
+   Respuesta: **INTERFAZ**
+
+5. **SOAP**  
+   Respuesta: **PROTOCOLO**
+
+6. **Local**  
+   Respuesta: **ACCESO**
+
+7. **Remoto**  
+   Respuesta: **ACCESO**
+
+8. **GET**  
+   Respuesta: **MÉTODO**
+
+9. **POST**  
+   Respuesta: **MÉTODO**
+
+10. **PUT**  
+   Respuesta: **MÉTODO**
+
+11. **DELETE**  
+   Respuesta: **MÉTODO**
+
+12. **CSV / Texto plano**  
+   Respuesta: **FORMATO**
+
+
+
+
+
+Pregunta 2
+
+Qué opción muestra "Hola mundo" al correr mi API y apuntar el navegador a:
+
+
+http://localhost:{puerto}/HolaMundo
+Grupo de elecciones de respuesta
+
+app.MapGet("/HolaMundo", () => "Hola mundo");
+
+app.MapPost("/", () => "Hola mundo");
+
+app.Services.Map("/HolaMundo", () => "Hola mundo");
+
+builder.MapPost("/HolaMundo", () => "Hola mundo");
+
+builder.MapGet("/HolaMundo", () => "Hola mundo");
+
+
+
+La respuesta correcta es:  
+
+**`app.MapGet("/HolaMundo", () => "Hola mundo");`**
+
+### Explicación:
+1. **`app.MapGet`**: Este método mapea una solicitud HTTP **GET** a la ruta especificada (`/HolaMundo`) con una acción que devuelve el texto `"Hola mundo"`. 
+2. **`http://localhost:{puerto}/HolaMundo`** utiliza el método GET por defecto cuando se accede desde un navegador.
+3. **Otras opciones**:
+   - **`app.MapPost("/")`**: Incorrecto, porque mapea una solicitud POST y apunta a la raíz (`/`), no a `/HolaMundo`.
+   - **`app.Services.Map`**: Incorrecto, no existe un método `Map` directamente en `app.Services`.
+   - **`builder.MapPost`**: Incorrecto, `builder` no es el objeto utilizado para registrar rutas en .NET 6+.
+   - **`builder.MapGet`**: Incorrecto, por la misma razón anterior: las rutas se configuran en el `app`, no en el `builder`.
+
+
+
+PREGUNTA 3
+
+
+Dada esta api mínima:
+app.MapGet(" ???? ", (int id) => productos.SingleOrDefault(p => p.Id == id));
+Qué opción define la ruta de manera tal que la URL
+
+http://www.mitienda.com/productos/5
+devuelva la información del producto id=5
+Grupo de elecciones de respuesta
+
+/productos/{int}
+
+/www.mitienda.com/productos/id/{int}
+
+/www.mitienda.com/productos/{id}
+
+/productos/{id}
+
+/productos/id/{int}
+
+
+La respuesta correcta es:  
+
+**`/productos/{id}`**
+
+### Explicación:
+1. En la API mínima de **C# y .NET**, las rutas se configuran directamente con placeholders como `{id}`, que se mapean automáticamente a los parámetros del método.
+2. **`app.MapGet("/productos/{id}", (int id) => ...)`**:
+   - La URL `http://www.mitienda.com/productos/5` mapea el valor `5` al placeholder `{id}` y lo pasa como el parámetro `int id` al método.
+   - Esto permite buscar un producto con el ID especificado.
+
+### Otras opciones:
+- **`/productos/{int}`**: Incorrecto, el placeholder debe ser un identificador como `{id}`, no un tipo de dato como `{int}`.
+- **`/www.mitienda.com/productos/id/{int}`**: Incorrecto, la ruta no incluye el dominio ni el tipo de dato.
+- **`/productos/id/{int}`**: Incorrecto, incluye un segmento adicional `/id/`, lo cual no coincide con la URL dada.
+- **`/www.mitienda.com/productos/{id}`**: Incorrecto, incluye el dominio en la ruta, lo cual no es necesario.
+
+
+
+
+
+Pregunta 4
+
+¿Qué es igual entre entre las API basadas en controlador y las API mínimas?
+
+Grupo de elecciones de respuesta
+
+Las solicitudes se asignan principalmente a controladores
+
+Las implementación de las rutas frecuentemente se definen mediante expresiones lambda
+
+Las rutas se definen mediante decoradores.
+
+El sistema inicia y se configura en el archivo Program.cs
+
+
+
+La respuesta correcta es:
+
+**`El sistema inicia y se configura en el archivo Program.cs`**
+
+### Explicación:
+Tanto en **API basadas en controlador** como en **API mínimas**, la configuración e inicio de la aplicación se realiza en el archivo `Program.cs` en .NET. Aunque las formas de definir las rutas y controladores varían, la inicialización y configuración del sistema sigue siendo parte del mismo archivo.
+
+### Otras opciones:
+- **Las solicitudes se asignan principalmente a controladores**: Esto es cierto para las **API basadas en controlador**, pero no es típico de las **API mínimas**, que no usan controladores.
+  
+- **Las implementación de las rutas frecuentemente se definen mediante expresiones lambda**: Esto es característico de las **API mínimas**, pero no de las **API basadas en controlador**, donde las rutas se definen usando atributos en los controladores.
+
+- **Las rutas se definen mediante decoradores**: Esto es cierto para las **API basadas en controlador**, donde se utilizan atributos como `[HttpGet]`, `[HttpPost]`, etc., para definir las rutas. No es característico de las **API mínimas**, donde las rutas se definen de manera directa usando métodos como `MapGet`, `MapPost`, etc.
+
+
+
+
+
+Pregunta 5
+
+Dado el siguiente controlador:
+
+[Route("api/[controller]/[action]")]
+[ApiController]
+public class PizzaController : ControllerBase
+{
+    [HttpGet]
+    public List<Pizza> Menu() { .... }
+}
+Cuál es la url correcta?
+Grupo de elecciones de respuesta
+
+GET http://localhost:{puerto}/api/PizzaController
+
+GET http://localhost:{puerto}/api/Pizza
+
+GET http://localhost:{puerto}/PizzaController/Menu
+
+GET http://localhost:{puerto}/api/Pizza/Menu
+
+
+
+La respuesta correcta es:
+
+**`GET http://localhost:{puerto}/api/Pizza/Menu`**
+
+### Explicación:
+1. **`[Route("api/[controller]/[action]")]`**: La ruta se construye utilizando el nombre del controlador (`PizzaController`) y la acción (`Menu`), lo que da como resultado la ruta `/api/Pizza/Menu`.
+   - **`[controller]`** es reemplazado por el nombre del controlador sin la palabra "Controller", es decir, `Pizza`.
+   - **`[action]`** es reemplazado por el nombre de la acción, en este caso, `Menu`.
+   
+2. **El `HttpGet`** en el método **`Menu()`** indica que esta ruta responde a una solicitud GET.
+
+### Otras opciones:
+- **`GET http://localhost:{puerto}/api/PizzaController`**: Incorrecto, ya que la ruta no incluye `/Menu` y además el controlador no se usa con su sufijo "Controller".
+- **`GET http://localhost:{puerto}/api/Pizza`**: Incorrecto, ya que el método específico `Menu()` también debe ser parte de la URL.
+- **`GET http://localhost:{puerto}/PizzaController/Menu`**: Incorrecto, porque la ruta definida comienza con `/api` y no se incluye el sufijo "Controller".
+
+
+
+
+
+Pregunta 6
+
+Supongamos que necesito actualizar la definición (completa) de una pizza. ¿Qué método HTTP es la mejor opción para la solicitud?
+
+Grupo de elecciones de respuesta
+
+PUT
+
+DELETE
+
+POST
+
+GET
+
+
+La respuesta correcta es:
+
+**`PUT`**
+
+### Explicación:
+- **`PUT`** es el método HTTP adecuado cuando necesitas actualizar completamente un recurso existente en el servidor. En este caso, si estás actualizando la **definición completa** de una pizza, el método **`PUT`** es el más apropiado, ya que está diseñado para reemplazar completamente el recurso especificado (la pizza en este caso) con la nueva definición.
+
+### Otras opciones:
+- **`DELETE`**: Este método se usa para eliminar un recurso, no para actualizarlo.
+- **`POST`**: Aunque se puede usar para actualizar recursos, generalmente se emplea para crear nuevos recursos o realizar acciones que no encajan con las actualizaciones completas de un recurso.
+- **`GET`**: Este método se utiliza para obtener recursos del servidor, no para actualizar.
+
+
+
+
+Pregunta 7
+
+Supongamos que quiero actualizar sólo el precio de una pizza, dejando todos los demás datos intactos. ¿Qué método es la mejor opción para la solicitud?
+
+Grupo de elecciones de respuesta
+
+PUT
+
+PATCH
+
+DELETE/PATCH
+
+POST
+
+DELETE/POST
+
+DELETE/PUT
+
+
+La respuesta correcta es:
+
+**`PATCH`**
+
+### Explicación:
+- **`PATCH`** es el método HTTP adecuado cuando necesitas realizar **una actualización parcial** de un recurso. En este caso, si solo deseas actualizar el precio de una pizza y dejar el resto de los datos intactos, **`PATCH`** es la opción ideal porque se utiliza para hacer cambios parciales a un recurso existente.
+
+### Otras opciones:
+- **`PUT`**: Aunque `PUT` se utiliza para actualizar recursos, está diseñado para reemplazar el recurso completo, no solo una parte de él. Por lo tanto, no es el más adecuado si solo deseas cambiar una propiedad (como el precio).
+- **`DELETE/PATCH`, `DELETE/POST`, `DELETE/PUT`**: Estas combinaciones son incorrectas, ya que no son métodos estándar para actualizar recursos. `DELETE` se usa para eliminar recursos, y los otros métodos (`POST`, `PATCH`, `PUT`) se usan para actualizaciones, pero no deben combinarse con `DELETE` para este caso.
+- **`POST`**: Se utiliza más comúnmente para crear nuevos recursos, no para actualizar un recurso parcialmente.
+
+
+
+
+Pregunta 8
+
+¿Cual es el código HTTP para "No encontrado"?
+
+Grupo de elecciones de respuesta
+
+404
+
+301
+
+400
+
+500
+
+
+La respuesta correcta es:
+
+**`404`**
+
+### Explicación:
+- **`404`**: Este es el código de estado HTTP que indica que el **recurso solicitado no se ha encontrado** en el servidor. Es una respuesta común cuando la URL solicitada no existe en el servidor.
+
+### Otras opciones:
+- **`301`**: Es un código de redirección que significa que el recurso solicitado ha sido **movido permanentemente** a otra URL.
+- **`400`**: Es un código de error que indica una **solicitud incorrecta** o malformada del cliente.
+- **`500`**: Es un código de error que indica un **problema en el servidor**, generalmente un error interno.
+
+
+
+
+Pregunta 9
+
+¿Qué codigo HTTP debería devolver nuestra API si el TOKEN es inválido?
+
+Grupo de elecciones de respuesta
+
+500
+
+403
+
+404
+
+400
+
+
+La respuesta correcta es:
+
+**`403`**
+
+### Explicación:
+- **`403 Forbidden`**: Este código HTTP indica que **el servidor entendió la solicitud**, pero **el cliente no tiene permisos suficientes para acceder al recurso**, lo cual es común cuando el token de autenticación es inválido o no tiene los permisos necesarios. Es una forma de rechazar la solicitud sin dar detalles adicionales sobre la validez del token.
+
+### Otras opciones:
+- **`500`**: Es un código de error que indica un **problema interno del servidor**, no se utiliza para problemas de autorización.
+- **`404`**: Este código indica que el **recurso no se encontró**, lo cual no está relacionado con problemas de autenticación o autorización.
+- **`400`**: Aunque se usa para **solicitudes malformadas**, no es el más apropiado para problemas de autenticación, que deberían manejarse con un código `403` o `401`.
+
+
+
+
+Pregunta 10 
+
+¿Cual es el código HTTP que se devuelve en una llamada exitosa?
+
+Grupo de elecciones de respuesta
+
+400
+
+204
+
+200
+
+500
+
+
+La respuesta correcta es:
+
+**`200`**
+
+### Explicación:
+- **`200 OK`**: Este es el código HTTP estándar que se devuelve cuando la solicitud se ha procesado correctamente y el servidor ha devuelto una respuesta exitosa. Indica que la operación solicitada fue exitosa, ya sea para obtener datos, realizar cambios o ejecutar alguna acción.
+
+### Otras opciones:
+- **`400`**: Este código indica una **solicitud incorrecta** o malformada por parte del cliente, no es una respuesta exitosa.
+- **`204`**: Este código significa **No Content**, que también puede considerarse una respuesta exitosa, pero se utiliza cuando la solicitud se ha procesado correctamente pero no se devuelve ningún contenido. Es común en solicitudes como `DELETE`.
+- **`500`**: Este es un código de error que indica un **problema interno del servidor**, no es una respuesta exitosa.
+
+
+
+
+/////////////
+
+
+
+Puntuación para este intento: 90 de 100
+Entregado 18 de nov a las 7:46
+Este intento ha tenido una duración de 19 minutos.
+ 
+Pregunta 1
+
+10 / 10 puntos
+Relaciona los términos
+¡Correcto!
+REST 
+Arquitectura
+¡Correcto!
+XML / JSON 
+Formato
+¡Correcto!
+HTTP 
+Protocolo
+¡Correcto!
+API 
+Interfaz
+¡Correcto!
+SOAP 
+Protocolo
+¡Correcto!
+Local 
+Acceso
+¡Correcto!
+Remoto 
+Acceso
+¡Correcto!
+GET 
+Método
+¡Correcto!
+POST 
+Método
+¡Correcto!
+PUT 
+Método
+¡Correcto!
+DELETE 
+Método
+¡Correcto!
+CSV / Texto plano 
+Formato
+ 
+
+Pregunta 2
+10 / 10 puntos
+Qué opción muestra "Hola mundo" al correr mi API y apuntar el navegador a:
+
+
+http://localhost:{puerto}/HolaMundo
+¡Correcto!
+  app.MapGet("/HolaMundo", () => "Hola mundo"); 
+  app.MapPost("/", () => "Hola mundo"); 
+  app.Services.Map("/HolaMundo", () => "Hola mundo"); 
+  builder.MapPost("/HolaMundo", () => "Hola mundo"); 
+  builder.MapGet("/HolaMundo", () => "Hola mundo"); 
+ 
+
+
+Pregunta 3
+0 / 10 puntos
+Dada esta api mínima:
+app.MapGet(" ???? ", (int id) => productos.SingleOrDefault(p => p.Id == id));
+Qué opción define la ruta de manera tal que la URL
+
+http://www.mitienda.com/productos/5
+devuelva la información del producto id=5
+  /productos/{int} 
+Respuesta correcta
+  /www.mitienda.com/productos/id/{int}      ****************
+  /www.mitienda.com/productos/{id} 
+Respondido
+  /productos/{id} 
+  /productos/id/{int} 
+ 
+
+
+Pregunta 4
+10 / 10 puntos
+¿Qué es igual entre entre las API basadas en controlador y las API mínimas?
+
+  Las solicitudes se asignan principalmente a controladores 
+  Las implementación de las rutas frecuentemente se definen mediante expresiones lambda 
+  Las rutas se definen mediante decoradores. 
+¡Correcto!
+  El sistema inicia y se configura en el archivo Program.cs. 
+ 
+
+
+Pregunta 5
+10 / 10 puntos
+Dado el siguiente controlador:
+
+[Route("api/[controller]/[action]")]
+[ApiController]
+public class PizzaController : ControllerBase
+{
+    [HttpGet]
+    public List<Pizza> Menu() { .... }
+}
+Cuál es la url correcta?
+  GET http://localhost:{puerto}/api/PizzaController 
+  GET http://localhost:{puerto}/api/Pizza 
+  GET http://localhost:{puerto}/PizzaController/Menu 
+¡Correcto!
+  GET http://localhost:{puerto}/api/Pizza/Menu 
+ 
+
+
+Pregunta 6
+10 / 10 puntos
+Supongamos que necesito actualizar la definición (completa) de una pizza. ¿Qué método HTTP es la mejor opción para la solicitud?
+
+¡Correcto!
+  PUT 
+  DELETE 
+  POST 
+  GET 
+ 
+
+
+Pregunta 7
+10 / 10 puntos
+Supongamos que quiero actualizar sólo el precio de una pizza, dejando todos los demás datos intactos. ¿Qué método es la mejor opción para la solicitud?
+
+  PUT 
+¡Correcto!
+  PATCH 
+  DELETE/PATCH 
+  POST 
+  DELETE/POST 
+  DELETE/PUT 
+ 
+
+
+Pregunta 8
+10 / 10 puntos
+¿Cual es el código HTTP para "No encontrado"?
+
+¡Correcto!
+  404 
+  301 
+  400 
+  500 
+ 
+
+Pregunta 9
+10 / 10 puntos
+¿Qué codigo HTTP debería devolver nuestra API si el TOKEN es inválido?
+
+  500 
+¡Correcto!
+  403 
+  404 
+  400 
+ 
+
+
+Pregunta 10
+10 / 10 puntos
+¿Cual es el código HTTP que se devuelve en una llamada exitosa?
+
+  400 
+  204 
+¡Correcto!
+  200 
+  500 
+Puntuación de la prueba: 90 de 100
+
+
+
+
+*******************
+
+
+
+
+MODULO 3
+
+
+
+Pregunta 1
+
+¿Qué es Entity Framework Core?
+
+Grupo de elecciones de respuesta
+
+Un ORM ligero y multiplataforma
+
+Un sistema operativo
+
+Un lenguaje de programación
+
+
+**Respuesta correcta:**  
+**Un ORM ligero y multiplataforma**  
+
+**Explicación:**  
+Entity Framework Core (EF Core) es un **Object-Relational Mapper (ORM)** ligero y multiplataforma desarrollado por Microsoft. Permite a los desarrolladores trabajar con bases de datos utilizando objetos .NET en lugar de escribir directamente consultas SQL. Es una versión moderna y optimizada de Entity Framework, compatible con múltiples sistemas operativos y bases de datos.
+
+
+
+Pregunta 2
+
+¿Cuál de los siguientes proveedores de bases de datos es compatible con EF Core?
+
+Grupo de elecciones de respuesta
+
+Microsoft SQL Server
+
+Sybase
+
+MySQL
+
+**Respuesta correcta:**  
+**Microsoft SQL Server** y **MySQL**  
+
+**Explicación:**  
+Entity Framework Core (EF Core) es compatible con una amplia gama de proveedores de bases de datos, incluidos **Microsoft SQL Server** y **MySQL**. Sin embargo, **Sybase** no es un proveedor oficialmente soportado por EF Core.  
+- **Microsoft SQL Server:** Es el proveedor más utilizado con EF Core.  
+- **MySQL:** Es compatible a través de proveedores externos como `Pomelo.EntityFrameworkCore.MySql`.  
+- **Sybase:** Aunque no tiene soporte oficial, algunos desarrolladores han utilizado soluciones de terceros para trabajar con Sybase, pero no es un proveedor nativo para EF Core.  
+
+
+
+
+Pregunta 3
+
+¿Qué técnica se utiliza para interactuar con bases de datos en EF Core utilizando objetos .NET?
+
+Grupo de elecciones de respuesta
+
+SQL puro
+
+Object Relational Mapper (ORM)
+
+Stored procedures
+
+**Respuesta correcta:**  
+**Object Relational Mapper (ORM)**  
+
+**Explicación:**  
+Entity Framework Core utiliza la técnica de **Object Relational Mapping (ORM)** para interactuar con bases de datos. Esta técnica permite a los desarrolladores trabajar con bases de datos a través de objetos .NET, lo que simplifica el manejo de datos al abstraer las consultas SQL. Aunque EF Core admite el uso de **SQL puro** y **stored procedures**, el enfoque principal del framework es el ORM.
+
+
+
+Pregunta 4
+
+
+¿Qué se utiliza para escribir consultas en EF Core?
+
+Grupo de elecciones de respuesta
+
+LINQ (Language Integrated Query)
+
+Procedimientos almacenados
+
+Directamente en SQL
+
+
+**Respuesta correcta:**  
+**LINQ (Language Integrated Query)**  
+
+**Explicación:**  
+En Entity Framework Core, las consultas a bases de datos generalmente se escriben utilizando **LINQ (Language Integrated Query)**, una herramienta que permite trabajar con datos de forma declarativa mediante expresiones en el lenguaje .NET, como C#. Aunque EF Core también permite ejecutar **procedimientos almacenados** y consultas **directamente en SQL**, el enfoque principal y más común es el uso de LINQ por su integración fluida con objetos y colecciones .NET.  
+
+Ejemplo con LINQ:  
+```csharp
+var productos = context.Productos.Where(p => p.Precio > 100).ToList();
+```
+
+
+
+Pregunta 5
+
+¿Qué herramienta de EF Core se utiliza para mantener sincronizado el esquema de la base de datos con el modelo de datos?
+
+Grupo de elecciones de respuesta
+
+Migraciones
+
+Backups
+
+Scripts SQL
+
+
+
+**Respuesta correcta:**  
+**Migraciones**  
+
+**Explicación:**  
+En Entity Framework Core, las **migraciones** se utilizan para mantener sincronizado el esquema de la base de datos con el modelo de datos definido en el código. Permiten crear, actualizar o eliminar tablas y otros elementos del esquema de manera controlada, basándose en los cambios realizados en las clases del modelo.  
+
+- **Backups:** Son copias de seguridad de la base de datos, pero no se utilizan para sincronizar el esquema.  
+- **Scripts SQL:** Pueden generarse a partir de las migraciones, pero no son la herramienta principal para sincronizar el modelo con el esquema.  
+
+Ejemplo:  
+```bash
+dotnet ef migrations add NuevaMigracion
+dotnet ef database update
+```  
+Esto crea una nueva migración y actualiza la base de datos para reflejar los cambios en el modelo.
+
+
+
+
+Pregunta 6
+
+¿Cuál de las siguientes opciones NO es un proveedor de base de datos soportado por EF Core?
+
+Grupo de elecciones de respuesta
+
+Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Sqlite
+
+Microsoft.EntityFrameworkCore.Sybase
+
+
+**Respuesta correcta:**  
+**Microsoft.EntityFrameworkCore.Sybase**  
+
+**Explicación:**  
+EF Core oficialmente soporta proveedores como **Microsoft.EntityFrameworkCore.SqlServer** (para SQL Server) y **Microsoft.EntityFrameworkCore.Sqlite** (para SQLite). Sin embargo, **Microsoft.EntityFrameworkCore.Sybase** no es un proveedor oficial soportado por EF Core.  
+
+Aunque existen proveedores de terceros para Sybase, como `EntityFrameworkCore.FirebirdSql` o adaptaciones similares, no están integrados oficialmente en la lista de proveedores de EF Core.
+
+
+
+
+
+Pregunta 7
+
+¿Qué propiedad se utiliza para asegurar que un campo es obligatorio en una entidad utilizando Fluent API?
+
+Grupo de elecciones de respuesta
+
+.IsRequired()
+
+.HasDefaultValue()
+
+.HasMaxLength()
+
+
+
+**Respuesta correcta:**  
+**.IsRequired()**  
+
+**Explicación:**  
+En Fluent API de Entity Framework Core, la propiedad **.IsRequired()** se utiliza para marcar un campo como obligatorio, lo que significa que no puede aceptar valores nulos (NULL) en la base de datos.  
+
+- **.HasDefaultValue():** Se usa para establecer un valor predeterminado para un campo en caso de que no se asigne explícitamente un valor.  
+- **.HasMaxLength():** Se utiliza para definir la longitud máxima permitida para cadenas de texto (por ejemplo, en campos de tipo `nvarchar`).  
+
+Ejemplo con **.IsRequired()**:  
+```csharp
+modelBuilder.Entity<Producto>()
+    .Property(p => p.Nombre)
+    .IsRequired();
+```  
+Esto asegura que el campo `Nombre` en la entidad `Producto` no pueda ser nulo.
+
+
+
+
+
+
+Pregunta 8
+
+¿Cuál es la función principal de un objeto de contexto en EF Core?
+
+Grupo de elecciones de respuesta
+
+Almacenar procedimientos almacenados
+
+Generar backups automáticos
+
+Representar una sesión con la base de datos
+
+
+
+**Respuesta correcta:**  
+**Representar una sesión con la base de datos**  
+
+**Explicación:**  
+En Entity Framework Core, el objeto de contexto (derivado de la clase `DbContext`) **representa una sesión con la base de datos** y proporciona acceso a las entidades y operaciones como consultas, inserciones, actualizaciones y eliminaciones. Es el puente entre el modelo de datos de la aplicación y la base de datos subyacente.  
+
+- **Almacenar procedimientos almacenados:** No es función del objeto de contexto. Sin embargo, este puede invocar procedimientos almacenados si están configurados.  
+- **Generar backups automáticos:** No es responsabilidad del contexto; los backups deben gestionarse fuera de EF Core.  
+
+Ejemplo básico:  
+```csharp
+using (var context = new MiDbContext())
+{
+    var productos = context.Productos.ToList();
+}
+```  
+Aquí, `context` gestiona la conexión a la base de datos para recuperar los productos.
+
+
+
+
+Pregunta 9
+
+¿Qué método se utiliza para iniciar una transacción manualmente en EF Core?
+
+Grupo de elecciones de respuesta
+
+BeginTransaction
+
+StartTransaction
+
+CreateTransaction
+
+
+**Respuesta correcta:**  
+**BeginTransaction**  
+
+**Explicación:**  
+En Entity Framework Core, el método **`BeginTransaction()`** se utiliza para iniciar una transacción manualmente. Esto permite que se agrupen varias operaciones en una transacción y se puedan confirmar o revertir (commit o rollback) según sea necesario.  
+
+Ejemplo:  
+```csharp
+using (var context = new MiDbContext())
+{
+    using (var transaction = context.Database.BeginTransaction())
+    {
+        try
+        {
+            // Realizar operaciones en la base de datos
+            context.SaveChanges();
+
+            // Confirmar la transacción
+            transaction.Commit();
+        }
+        catch (Exception)
+        {
+            // Revertir en caso de error
+            transaction.Rollback();
+        }
+    }
+}
+```  
+
+- **StartTransaction** y **CreateTransaction** no son métodos válidos en EF Core para iniciar una transacción.
+
+
+
+
+Pregunta 10
+
+¿Qué tipo de simultaneidad asume EF Core para gestionar conflictos de concurrencia?
+
+Grupo de elecciones de respuesta
+
+Simultaneidad pesimista
+
+Simultaneidad exclusiva
+
+Simultaneidad optimista
+
+
+**Respuesta correcta:**  
+**Simultaneidad optimista**  
+
+**Explicación:**  
+Entity Framework Core utiliza **simultaneidad optimista** para gestionar conflictos de concurrencia. Este enfoque asume que los conflictos de concurrencia son poco frecuentes y permite que varios usuarios o procesos modifiquen datos al mismo tiempo, pero verifica si se ha producido un conflicto cuando se intenta guardar los cambios. Si dos usuarios modifican la misma fila, EF Core detectará el conflicto y lanzará una excepción.
+
+Con **simultaneidad optimista**, generalmente se utiliza un campo de **marca de tiempo** o un **número de versión** para identificar si un registro ha sido modificado por otro usuario antes de que el actual intente guardar los cambios.
+
+- **Simultaneidad pesimista:** Impone bloqueos en los datos para evitar que otros usuarios modifiquen un registro mientras está en uso.  
+- **Simultaneidad exclusiva:** Aunque similar, implica un control más rígido sobre el acceso exclusivo a los registros, lo cual no es el enfoque predeterminado en EF Core.
+
+
+
+
+******************
+
+
+
+
+
+Módulo 4
+
+
+
+¡Bienvenidos al Módulo 4: Autenticación en ASP.NET Core! 🔐🛡️
+
+
+En este módulo, nos adentraremos en el mundo de la seguridad web, enfocándonos en la autenticación dentro de aplicaciones ASP.NET Core. La seguridad es un aspecto fundamental para cualquier aplicación moderna, y en este módulo, aprenderás los conceptos esenciales para proteger tus aplicaciones y gestionar el acceso de los usuarios de manera segura y eficaz.
+
+Temario
+
+Autenticación en ASP.NET Core: Descubre cómo configurar y gestionar la autenticación en aplicaciones ASP.NET Core.
+
+Conceptos Básicos de Seguridad en Web: Explora los principios fundamentales de la seguridad en aplicaciones web y su importancia.
+
+Diferencias entre Autenticación y Autorización: Entiende claramente la diferencia entre estos dos conceptos clave y cómo se aplican en ASP.NET Core.
+
+Métodos Comunes de Autenticación: Conoce los diferentes métodos de autenticación utilizados en el desarrollo web moderno.
+
+Token-Based Authentication: Aprende sobre la autenticación basada en tokens, una técnica ampliamente utilizada para gestionar sesiones de usuario.
+
+Implementación en ASP.NET Core: Pon en práctica los conocimientos adquiridos implementando sistemas de autenticación en tus proyectos ASP.NET Core.
+
+
+Material Aquí Download Aquí 
+ 
+
+Este módulo te proporcionará las herramientas necesarias para garantizar que tus aplicaciones ASP.NET Core sean seguras y confiables. ¡Prepárate para construir aplicaciones con los más altos estándares de seguridad! 🛡️🚀
+
+
+
+
+Pregunta 1
+
+
+¿Cuál es el propósito principal de la autenticación en aplicaciones web?
+
+Grupo de elecciones de respuesta
+
+Verificar la identidad de un usuario o sistema
+
+Proteger la base de datos de la aplicación
+
+Determinar los permisos de acceso de un usuario
+
+
+La respuesta correcta es:
+
+**Verificar la identidad de un usuario o sistema**
+
+### Explicación:
+El propósito principal de la **autenticación** en aplicaciones web es confirmar que un usuario o sistema es quien afirma ser. Esto se realiza mediante credenciales como contraseñas, tokens, certificados, etc.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Proteger la base de datos de la aplicación**: Aunque la autenticación contribuye indirectamente a proteger los datos, su propósito principal no es esto, sino verificar identidades.
+- **Determinar los permisos de acceso de un usuario**: Esto corresponde a la **autorización**, que es un proceso diferente que ocurre después de la autenticación.
+
+
+
+
+
+
+Pregunta 2
+
+¿Qué método de autenticación es el más tradicional y comúnmente utilizado?
+
+Grupo de elecciones de respuesta
+
+Certificados
+
+Tokens
+
+Usuario y contraseña
+
+
+La respuesta correcta es:
+
+**Usuario y contraseña**
+
+### Explicación:
+El método más tradicional y comúnmente utilizado para la autenticación en aplicaciones web es el uso de un **nombre de usuario** y una **contraseña**. Este enfoque ha sido la base de la autenticación durante décadas debido a su simplicidad y facilidad de implementación.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Certificados**: Aunque los certificados son seguros y se utilizan en sistemas más avanzados (como autenticación de servidores o usuarios en redes corporativas), no son tan comunes como el usuario y contraseña en aplicaciones web tradicionales.
+- **Tokens**: Los tokens, como JWT (JSON Web Tokens), son más modernos y usados en sistemas distribuidos y APIs, pero no son tan tradicionales como usuario y contraseña.
+
+
+
+
+
+Pregunta 3
+
+¿Qué principio establece que los usuarios solo deben tener los permisos necesarios para realizar sus funciones?
+
+Grupo de elecciones de respuesta
+
+Control de acceso basado en roles
+
+Autenticación multifactor
+
+Principio de mínimo privilegio
+
+
+La respuesta correcta es:
+
+**Principio de mínimo privilegio**
+
+### Explicación:
+El **principio de mínimo privilegio** establece que los usuarios, sistemas o procesos solo deben tener los permisos estrictamente necesarios para realizar sus funciones. Este principio minimiza el riesgo de abuso de privilegios o daños en caso de accesos no autorizados.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Control de acceso basado en roles (RBAC)**: Es una técnica que asigna permisos a roles específicos, pero no necesariamente asegura que cada rol siga el principio de mínimo privilegio.
+- **Autenticación multifactor (MFA)**: Se refiere a un método de autenticación que utiliza múltiples factores para verificar la identidad del usuario, no está relacionado con la asignación de permisos.
+
+
+
+
+Pregunta 4
+
+
+¿Qué es un JWT (JSON Web Token)?
+
+Grupo de elecciones de respuesta
+
+Un certificado digital utilizado para la autenticación
+
+Un token compactado y autocontenido para autenticar y autorizar usuarios
+
+Un método de autorización basado en roles
+
+
+
+La respuesta correcta es:
+
+**Un token compactado y autocontenido para autenticar y autorizar usuarios**
+
+### Explicación:
+Un **JSON Web Token (JWT)** es un token en formato compacto y autocontenido que se utiliza principalmente para:
+1. **Autenticar** usuarios, verificando su identidad.
+2. **Autorizar** el acceso a recursos, ya que puede incluir información sobre los permisos o roles de un usuario.
+
+Los JWT están codificados en formato **Base64** y constan de tres partes: el encabezado, el cuerpo (payload) y la firma, lo que los hace fáciles de transportar entre sistemas.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Un certificado digital utilizado para la autenticación**: Los certificados digitales son diferentes de los JWT y se utilizan en otros contextos, como la autenticación de servidores o conexiones seguras.
+- **Un método de autorización basado en roles**: Aunque los JWT pueden incluir información sobre roles, no son en sí mismos un método de autorización, sino un mecanismo para transportar datos de autenticación y autorización.
+
+
+
+
+Pregunta 5
+
+¿Cuál es una ventaja de utilizar tokens de sesión?
+
+Grupo de elecciones de respuesta
+
+Requiere mantener el estado de la sesión en el servidor
+
+Los tokens son difíciles de falsificar
+
+El servidor no necesita mantener el estado de la sesión
+
+
+
+La respuesta correcta es:
+
+**El servidor no necesita mantener el estado de la sesión**
+
+### Explicación:
+Una de las ventajas clave de utilizar **tokens de sesión**, como JWT, es que son **stateless** (sin estado). Esto significa que el servidor no necesita mantener información de sesión para cada usuario, ya que toda la información relevante está contenida en el propio token, lo que reduce la carga en el servidor.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Requiere mantener el estado de la sesión en el servidor**: Esto es lo opuesto a una ventaja de los tokens de sesión; precisamente, no se requiere mantener el estado en el servidor.
+- **Los tokens son difíciles de falsificar**: Aunque esto es cierto debido a la firma que utilizan, no es la ventaja más destacada en el contexto de esta pregunta.
+
+
+
+
+
+Pregunta 6
+
+
+¿Qué se debe hacer para proteger rutas específicas en una aplicación ASP.NET Core?
+
+Grupo de elecciones de respuesta
+
+Implementar autenticación multifactor
+
+Usar contraseñas fuertes
+
+Utilizar atributos de autorización
+
+
+La respuesta correcta es:
+
+**Utilizar atributos de autorización**
+
+### Explicación:
+En **ASP.NET Core**, para proteger rutas específicas y asegurar que solo los usuarios autorizados puedan acceder a ellas, se utilizan **atributos de autorización**. Estos atributos permiten definir reglas de acceso para controladores y acciones específicas, como `[Authorize]`, que asegura que solo los usuarios autenticados y autorizados puedan acceder a esas rutas.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Implementar autenticación multifactor**: Aunque la autenticación multifactor mejora la seguridad, no se utiliza específicamente para proteger rutas en ASP.NET Core, sino para agregar una capa adicional de seguridad en el proceso de autenticación.
+- **Usar contraseñas fuertes**: Usar contraseñas fuertes es una buena práctica de seguridad, pero no es la solución para proteger rutas específicas dentro de una aplicación ASP.NET Core.
+
+
+
+
+Pregunta 7
+
+¿Cuál de los siguientes métodos de autenticación utiliza criptografía de clave pública?
+
+Grupo de elecciones de respuesta
+
+Tokens
+
+Certificados
+
+Usuario y contraseña
+
+
+
+La respuesta correcta es:
+
+**Certificados**
+
+### Explicación:
+Los **certificados digitales** utilizan **criptografía de clave pública** para autenticar la identidad de un usuario, servidor o sistema. La criptografía de clave pública permite que una clave pública sea utilizada para verificar la autenticidad de un mensaje o firma que ha sido encriptado con una clave privada correspondiente.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Tokens**: Los tokens, como los JWT, no utilizan criptografía de clave pública para su autenticación. Utilizan firmas y algoritmos de hashing, pero no se basan en la criptografía de clave pública/privada.
+- **Usuario y contraseña**: La autenticación basada en **usuario y contraseña** no involucra criptografía de clave pública, ya que simplemente verifica si las credenciales proporcionadas coinciden con las almacenadas.
+
+
+
+
+
+Pregunta 8
+
+
+¿Qué es el control de acceso basado en roles (RBAC)?
+
+Grupo de elecciones de respuesta
+
+Un método de autorización que utiliza roles específicos para asignar permisos
+
+Un tipo de autenticación multifactor
+
+Un proceso para verificar la identidad de un usuario
+
+
+La respuesta correcta es:
+
+**Un método de autorización que utiliza roles específicos para asignar permisos**
+
+### Explicación:
+El **Control de Acceso Basado en Roles (RBAC)** es un modelo de autorización en el que los usuarios son asignados a **roles** específicos, y a esos roles se les otorgan **permisos** para acceder a recursos o realizar acciones en una aplicación o sistema. Esto permite gestionar los permisos de manera más eficiente, agrupando usuarios con funciones similares en roles con permisos comunes.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Un tipo de autenticación multifactor**: RBAC no es un método de autenticación. La autenticación multifactor se refiere a un proceso donde se requieren múltiples pruebas de identidad, como una contraseña y un código enviado por SMS.
+- **Un proceso para verificar la identidad de un usuario**: Esto describe más bien la **autenticación**, no la autorización. La autenticación verifica la identidad de un usuario, mientras que RBAC se utiliza para determinar los permisos basados en el rol del usuario una vez autenticado.
+
+
+
+
+Pregunta 9
+
+¿Qué parámetro se utiliza para validar la firma de un token en ASP.NET Core?
+
+Grupo de elecciones de respuesta
+
+ValidateLifetime
+
+ValidateAudience
+
+ValidateIssuerSigningKey
+
+
+
+La respuesta correcta es:
+
+**ValidateIssuerSigningKey**
+
+### Explicación:
+En **ASP.NET Core**, el parámetro **`ValidateIssuerSigningKey`** se utiliza para validar la firma del token. Este parámetro asegura que el **JWT** (JSON Web Token) haya sido firmado correctamente por un emisor de confianza, es decir, que no haya sido manipulado desde que fue emitido.
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **ValidateLifetime**: Este parámetro se utiliza para validar si el token ha expirado, verificando su fecha de expiración.
+- **ValidateAudience**: Este parámetro valida que el token esté destinado a la audiencia esperada, es decir, que el **audience** especificado en el token coincida con el que el servidor espera.
+
+
+
+Pregunta 10
+
+¿Qué característica de la autenticación multifactor (MFA) mejora la seguridad?
+
+Grupo de elecciones de respuesta
+
+Permite acceso sin verificación
+
+Utiliza múltiples métodos de verificación
+
+Requiere solo una contraseña
+
+
+
+La respuesta correcta es:
+
+**Utiliza múltiples métodos de verificación**
+
+### Explicación:
+La **autenticación multifactor (MFA)** mejora la seguridad al **utilizar múltiples métodos de verificación** para autenticar a un usuario. Esto generalmente combina algo que el usuario sabe (como una contraseña), algo que el usuario tiene (como un código enviado a su teléfono) y algo que el usuario es (como una huella dactilar o reconocimiento facial). Esto dificulta que un atacante obtenga acceso, incluso si conoce una de las formas de autenticación (como la contraseña).
+
+---
+
+### ¿Por qué no son correctas las otras opciones?
+- **Permite acceso sin verificación**: Esto contradice el propósito de la autenticación multifactor, que precisamente busca requerir verificación adicional.
+- **Requiere solo una contraseña**: Esto describe la autenticación tradicional (de un solo factor), no multifactor, que no proporciona el mismo nivel de seguridad.
+
+
+
+
+
+******************************
+
+
+
+
+Modulo 5
+
+
+
+¡Bienvenidos al Módulo 5: Integración de API con Front-end en Blazor! 🌐💻
+
+
+En este módulo, exploraremos la integración de APIs con el front-end utilizando Blazor, una de las tecnologías más innovadoras en el ecosistema .NET. Blazor permite desarrollar aplicaciones web interactivas con C# en lugar de JavaScript, brindando una experiencia de desarrollo unificada y eficiente.
+
+Temario
+
+¿Qué es Blazor?: Introducción a Blazor, una tecnología que permite crear aplicaciones web con C# y .NET.
+
+Características Clave: Descubre las principales características de Blazor que lo hacen una opción poderosa para el desarrollo web.
+
+Historia y Evolución: Aprende sobre la evolución de Blazor y cómo ha llegado a ser una herramienta clave en el desarrollo web moderno.
+
+Blazor en .NET 8: Conoce las novedades y mejoras de Blazor en la versión más reciente de .NET.
+
+Tipos de Blazor: Explora los diferentes tipos de Blazor (Blazor Server y Blazor WebAssembly) y cuándo usar cada uno.
+
+
+Material Aquí Download Aquí 
+
+Este módulo te preparará para integrar eficientemente tus APIs con un front-end moderno utilizando Blazor, permitiéndote crear aplicaciones web robustas y altamente interactivas. ¡Prepárate para llevar tus habilidades de desarrollo web al siguiente nivel con Blazor! 🚀✨
+
+
+
+PREGUNTAS.
+
+
+Pregunta 1
+
+¿Qué es Blazor?
+
+Grupo de elecciones de respuesta
+
+Un lenguaje de programación nuevo.
+
+Un framework de desarrollo web de Microsoft que utiliza C# y .NET.
+
+Una herramienta de diseño gráfico.
+
+
+
+La respuesta correcta es:  
+
+**Un framework de desarrollo web de Microsoft que utiliza C# y .NET.**  
+
+Blazor es un framework desarrollado por Microsoft que permite crear aplicaciones web interactivas utilizando C# en lugar de JavaScript. Funciona sobre la plataforma .NET y puede ejecutarse en el navegador mediante WebAssembly o en el servidor.
+
+
+
+
+Pregunta 2
+
+¿Cuál es una característica clave de Blazor?
+
+Grupo de elecciones de respuesta
+
+Utiliza data binding bidireccional.
+
+No es compatible con ASP.NET Core.
+
+No permite reutilizar componentes.
+
+
+La respuesta correcta es:  
+
+**Utiliza data binding bidireccional.**  
+
+Blazor es conocido por su soporte para el enlace de datos bidireccional, lo que facilita la sincronización entre la interfaz de usuario y el modelo de datos. Esto permite una experiencia de desarrollo más fluida y reduce la necesidad de escribir código repetitivo para actualizar la UI y los datos.
+
+
+
+
+Pregunta 3
+
+¿Qué tipo de aplicaciones se pueden desarrollar con Blazor?
+
+Grupo de elecciones de respuesta
+
+Solo aplicaciones de escritorio.
+
+Solo aplicaciones móviles.
+
+Aplicaciones web interactivas.
+
+
+La respuesta correcta es:  
+
+**Aplicaciones web interactivas.**  
+
+Blazor permite desarrollar aplicaciones web interactivas que pueden ejecutarse tanto en el navegador (Blazor WebAssembly) como en el servidor (Blazor Server). Es una herramienta diseñada específicamente para el desarrollo de interfaces web modernas y dinámicas.
+
+
+
+
+Pregunta 4
+
+¿Qué es Blazor WebAssembly?
+
+Grupo de elecciones de respuesta
+
+Una herramienta de diseño para aplicaciones móviles.
+
+Una versión de Blazor que permite que el código C# se ejecute en el navegador.
+
+Una versión de Blazor que ejecuta la lógica de la aplicación en el servidor.
+
+
+La respuesta correcta es:  
+
+**Una versión de Blazor que permite que el código C# se ejecute en el navegador.**  
+
+Blazor WebAssembly es una versión de Blazor que utiliza WebAssembly para ejecutar el código C# directamente en el navegador, sin necesidad de un servidor para procesar la lógica de la aplicación. Esto permite crear aplicaciones web completamente independientes, descargadas y ejecutadas en el cliente.
+
+
+
+Pregunta 5
+
+¿Cuál es una ventaja de Blazor Server?
+
+Grupo de elecciones de respuesta
+
+Necesita una comunicación constante con el servidor.
+
+Permite que las aplicaciones funcionen sin conexión constante al servidor.
+
+Ejecuta la lógica de la aplicación en el servidor, reduciendo la carga en el cliente.
+
+
+La respuesta correcta es:  
+
+**Ejecuta la lógica de la aplicación en el servidor, reduciendo la carga en el cliente.**  
+
+Blazor Server ejecuta toda la lógica de la aplicación en el servidor y envía actualizaciones a la interfaz de usuario a través de una conexión SignalR. Esto permite aplicaciones ligeras en el cliente, ya que el procesamiento se realiza en el servidor, lo que puede ser útil para dispositivos con recursos limitados o cuando se busca minimizar el tiempo de carga inicial.
+
+
+
+
+
+Pregunta 6
+
+¿Qué componente de Blazor permite realizar solicitudes HTTP?
+
+Grupo de elecciones de respuesta
+
+SignalR
+
+HttpClient
+
+Razor
+
+
+La respuesta correcta es:  
+
+**HttpClient**  
+
+En Blazor, el componente **HttpClient** se utiliza para realizar solicitudes HTTP. Es una herramienta integrada en .NET que permite interactuar con servicios web y APIs REST, lo que facilita la comunicación entre la aplicación y servidores externos.
+
+
+
+
+
+Pregunta 7
+
+¿Cuál es un caso de uso ideal para Blazor WebAssembly?
+
+Grupo de elecciones de respuesta
+
+Aplicaciones internas con alta seguridad.
+
+Aplicaciones que requieren acceso completo a los recursos del servidor.
+
+Aplicaciones móviles y de escritorio que pueden funcionar sin conexión.
+
+
+La respuesta correcta es:  
+
+**Aplicaciones móviles y de escritorio que pueden funcionar sin conexión.**  
+
+Blazor WebAssembly es ideal para aplicaciones que necesitan ejecutarse directamente en el cliente, ya que descarga toda la lógica y recursos al navegador. Esto permite que las aplicaciones funcionen sin conexión constante al servidor, lo que es útil para escenarios móviles y de escritorio.
+
+
+
+
+Pregunta 8
+
+¿Qué directiva en Razor se utiliza para definir una ruta en un componente?
+
+Grupo de elecciones de respuesta
+
+@inherits
+
+@using
+
+@page
+
+
+La respuesta correcta es:  
+
+**@page**  
+
+La directiva **@page** en Razor se utiliza para definir una ruta asociada a un componente en una aplicación Blazor. Esto permite que el componente sea accesible a través de una URL específica en la aplicación web. Por ejemplo:  
+
+```razor
+@page "/mi-ruta"
+```  
+
+Esto hará que el componente sea accesible desde la URL `/mi-ruta`.
+
+
+
+
+
+Pregunta 9
+
+¿Cuál es la función del método GetFromJsonAsync en Blazor?  
+
+Grupo de elecciones de respuesta
+
+Enviar datos a una API.
+
+Obtener datos de una API.
+
+Eliminar datos de una API.
+
+
+La respuesta correcta es:  
+
+**Obtener datos de una API.**  
+
+El método **`GetFromJsonAsync`** en Blazor se utiliza para realizar solicitudes HTTP GET y obtener datos de una API en formato JSON. Es una forma sencilla de deserializar automáticamente la respuesta JSON en un objeto de C#.  
+
+Ejemplo de uso:  
+
+```csharp
+var datos = await HttpClient.GetFromJsonAsync<MiClase>("https://api.ejemplo.com/datos");
+```  
+
+Esto obtiene los datos de la URL especificada y los convierte en una instancia de `MiClase`.
+
+
+
+
+Pregunta 10
+
+¿Qué herramienta en Blazor permite la comunicación en tiempo real entre el cliente y el servidor?
+
+Grupo de elecciones de respuesta
+
+SignalR
+
+HttpClient
+
+WebAssembly
+
+
+La respuesta correcta es:  
+
+**SignalR**  
+
+**SignalR** es una biblioteca en Blazor que permite la comunicación en tiempo real entre el cliente y el servidor. Se utiliza para actualizar la interfaz de usuario de la aplicación de forma instantánea sin la necesidad de que el cliente realice solicitudes periódicas al servidor. SignalR es ideal para aplicaciones que requieren interacciones en tiempo real, como chats o aplicaciones de colaboración en línea.
+
+
+
+*************************
+
+
+EXAMAN FINAL
+
+
+
+Pregunta 1
+
+¿Qué es .NET?
+
+Grupo de elecciones de respuesta
+
+Una base de datos
+
+Un sistema operativo
+
+Una plataforma de desarrollo para crear aplicaciones
+
+Un lenguaje de programación
+
+
+
+
+
+Pregunta 2
+
+¿Cuál de las siguientes afirmaciones es cierta sobre .NET?
+
+Grupo de elecciones de respuesta
+
+Solo funciona en Windows
+
+No es de código abierto
+
+Es una plataforma multiplataforma
+
+Solo se puede usar con Java
+ 
+Pregunta destacada: Pregunta 3
+
+
+Pregunta 
+
+¿Qué lenguaje de programación se enseña desde cero por Scott Hanselman y David Fowler?
+
+Grupo de elecciones de respuesta
+
+Ruby
+
+C#
+
+Java
+
+Python
+ 
+
+
+
+Pregunta destacada: Pregunta 4
+
+¿Cuál es un pilar de la Programación Orientada a Objetos (POO)?
+
+Grupo de elecciones de respuesta
+
+JSON
+
+Herencia
+
+Recursividad
+
+SQL
+ 
+
+
+
+
+Pregunta destacada: Pregunta 5
+
+¿Qué es una API?
+
+Grupo de elecciones de respuesta
+
+Un sistema operativo
+
+Un software para crear gráficos
+
+Un conjunto de reglas y protocolos para comunicación entre aplicaciones
+
+Una base de datos
+ 
+
+
+
+Pregunta destacada: Pregunta 6
+
+¿Cuál de las siguientes es una ventaja de la API mínima?
+
+Grupo de elecciones de respuesta
+
+No soporta microservicios
+
+Requiere un control estricto de versiones
+
+Simplifica el proceso de configuración y desarrollo para aplicaciones pequeñas
+
+Ideal para aplicaciones grandes y complejas
+ 
+
+
+
+
+
+Pregunta destacada: Pregunta 7
+
+¿Qué es Entity Framework Core (EF Core)?
+
+Grupo de elecciones de respuesta
+
+Un lenguaje de programación
+
+Un ORM (Object Relational Mapper)
+
+Un sistema de autenticación
+
+Un servidor web
+ 
+
+
+
+
+Pregunta destacada: Pregunta 8
+
+¿Cuál de las siguientes bases de datos es compatible con EF Core?
+
+Grupo de elecciones de respuesta
+
+Oracle Database
+
+MongoDB
+
+Microsoft SQL Server
+
+Redis
+ 
+
+
+
+
+Pregunta destacada: Pregunta 9
+
+¿Qué permite las migraciones en EF Core?
+
+Grupo de elecciones de respuesta
+
+Crear copias de seguridad automáticas
+
+Cambiar de proveedor de bases de datos
+
+Actualizar el esquema de la base de datos de manera incremental
+
+Analizar la performance de la aplicación
+ 
+
+
+
+
+Pregunta destacada: Pregunta 10
+
+¿Qué es Blazor?
+
+Grupo de elecciones de respuesta
+
+Un framework de desarrollo web
+
+Un sistema operativo
+
+Un lenguaje de programación
+
+Una herramienta de gestión de bases de datos
+ 
+
+
+
+
+Pregunta destacada: Pregunta 11
+
+¿Cuál es una característica clave de Blazor?
+
+Grupo de elecciones de respuesta
+
+Permite crear aplicaciones web interactivas utilizando C#
+
+Utiliza solo JavaScript
+
+No soporta data binding
+
+Es exclusivo para aplicaciones móviles
+ 
+
+
+
+
+Pregunta destacada: Pregunta 12
+
+¿Qué modelo de Blazor ejecuta la lógica de la aplicación en el servidor?
+
+Grupo de elecciones de respuesta
+
+Blazor Server
+
+Blazor Desktop
+
+Blazor WebAssembly
+
+Blazor Console
+ 
+
+
+
+
+Pregunta destacada: Pregunta 13
+
+¿Cuál es una ventaja de Blazor WebAssembly?
+
+Grupo de elecciones de respuesta
+
+Ejecuta la lógica de la aplicación en el servidor
+
+Requiere una conexión constante con el servidor
+
+No soporta WebAssembly
+
+Permite que las aplicaciones funcionen sin conexión constante al servidor
+ 
+
+
+
+
+Pregunta destacada: Pregunta 14
+
+¿Qué es un componente en Blazor?
+
+Grupo de elecciones de respuesta
+
+Un sistema operativo
+
+Una base de datos
+
+Un bloque de construcción fundamental de las aplicaciones Blazor
+
+Un servicio web
+ 
+
+
+
+
+
+Pregunta destacada: Pregunta 15
+
+¿Qué es Razor en Blazor?
+
+Grupo de elecciones de respuesta
+
+Un lenguaje de programación
+
+Un motor de plantillas para generar HTML dinámico
+
+Un servidor web
+
+Un ORM
+ 
+
+
+
+
+Pregunta destacada: Pregunta 16
+
+¿Qué tipo de binding se utiliza para formularios en Blazor?
+
+Grupo de elecciones de respuesta
+
+Data Binding
+
+Two-way Binding
+
+Form Binding
+
+One-way Binding
+ 
+
+
+
+
+Pregunta destacada: Pregunta 17
+
+¿Qué método HTTP se usa para obtener datos de una API en Blazor?
+
+Grupo de elecciones de respuesta
+
+DELETE
+
+PUT
+
+POST
+
+GET
+ 
+
+
+
+
+Pregunta destacada: Pregunta 18
+
+¿Qué token se utiliza en la autenticación basada en tokens en Blazor?
+
+Grupo de elecciones de respuesta
+
+JSON Web Token (JWT)
+
+HTML Token
+
+XML Token
+
+SOAP Token
+
+
+
+
+ 
+Pregunta destacada: Pregunta 19
+
+¿Qué biblioteca se utiliza en Blazor para manejar tokens en el cliente?
+
+Grupo de elecciones de respuesta
+
+jQuery
+
+AngularJS
+
+Blazored.LocalStorage
+
+React
+ 
+
+
+
+
+
+
+Pregunta destacada: Pregunta 20
+
+¿Qué es HttpClient en Blazor?
+
+Grupo de elecciones de respuesta
+
+Un componente que permite realizar solicitudes HTTP
+
+Un sistema de autenticación
+
+Una base de datos
+
+Un servidor web
+
+
+
+
+### Respuestas:
+
+1. **¿Cuál de las siguientes afirmaciones es cierta sobre .NET?**  
+   **Es una plataforma multiplataforma**  
+   (.NET Core y .NET 5+ son multiplataforma, compatibles con Windows, macOS y Linux).
+
+2. **¿Qué lenguaje de programación se enseña desde cero por Scott Hanselman y David Fowler?**  
+   **C#**  
+   (Es un lenguaje clave en la plataforma .NET y muy promovido por Microsoft).
+
+3. **¿Cuál es un pilar de la Programación Orientada a Objetos (POO)?**  
+   **Herencia**  
+   (Junto con encapsulación y polimorfismo, es uno de los pilares fundamentales de la POO).
+
+4. **¿Qué es una API?**  
+   **Un conjunto de reglas y protocolos para comunicación entre aplicaciones**  
+   (APIs permiten que diferentes sistemas se comuniquen de manera estandarizada).
+
+5. **¿Cuál de las siguientes es una ventaja de la API mínima?**  
+   **Simplifica el proceso de configuración y desarrollo para aplicaciones pequeñas**  
+   (Las API mínimas en .NET ayudan a reducir la complejidad inicial en proyectos pequeños).
+
+6. **¿Qué es Entity Framework Core (EF Core)?**  
+   **Un ORM (Object Relational Mapper)**  
+   (Es una herramienta para trabajar con bases de datos de forma más abstracta y eficiente).
+
+7. **¿Cuál de las siguientes bases de datos es compatible con EF Core?**  
+   **Microsoft SQL Server**  
+   (Es una base de datos compatible nativamente con EF Core).
+
+8. **¿Qué permite las migraciones en EF Core?**  
+   **Actualizar el esquema de la base de datos de manera incremental**  
+   (Facilita cambios al esquema sin afectar datos existentes).
+
+9. **¿Qué es Blazor?**  
+   **Un framework de desarrollo web**  
+   (Blazor permite crear aplicaciones web interactivas usando C# en lugar de JavaScript).
+
+10. **¿Cuál es una característica clave de Blazor?**  
+    **Permite crear aplicaciones web interactivas utilizando C#**  
+    (Blazor elimina la necesidad de usar JavaScript para interactividad).
+
+11. **¿Qué modelo de Blazor ejecuta la lógica de la aplicación en el servidor?**  
+    **Blazor Server**  
+    (Este modelo procesa la lógica en el servidor y usa SignalR para interactuar con el cliente).
+
+12. **¿Cuál es una ventaja de Blazor WebAssembly?**  
+    **Permite que las aplicaciones funcionen sin conexión constante al servidor**  
+    (Es ideal para aplicaciones que necesitan operar offline).
+
+13. **¿Qué es un componente en Blazor?**  
+    **Un bloque de construcción fundamental de las aplicaciones Blazor**  
+    (Los componentes encapsulan lógica, diseño y datos para reutilización).
+
+14. **¿Qué es Razor en Blazor?**  
+    **Un motor de plantillas para generar HTML dinámico**  
+    (Razor permite combinar C# y HTML para crear contenido dinámico).
+
+15. **¿Qué tipo de binding se utiliza para formularios en Blazor?**  
+    **Two-way Binding**  
+    (Permite sincronizar automáticamente el modelo y la interfaz de usuario).
+
+16. **¿Qué método HTTP se usa para obtener datos de una API en Blazor?**  
+    **GET**  
+    (El método GET se utiliza para obtener datos de un servidor).
+
+17. **¿Qué token se utiliza en la autenticación basada en tokens en Blazor?**  
+    **JSON Web Token (JWT)**  
+    (JWT es ampliamente utilizado para autenticación y autorización).
+
+18. **¿Qué biblioteca se utiliza en Blazor para manejar tokens en el cliente?**  
+    **Blazored.LocalStorage**  
+    (Ayuda a almacenar tokens localmente en el cliente).
+
+19. **¿Qué es HttpClient en Blazor?**  
+    **Un componente que permite realizar solicitudes HTTP**  
+    (HttpClient facilita la interacción con APIs desde aplicaciones Blazor).
+
+
+
+
+
+*****************************
+
+
+
+
+
+

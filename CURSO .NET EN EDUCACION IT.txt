@@ -1,0 +1,610 @@
+
+
+
+
+CURSO .NET EN EDUCACION IT
+
+
+
+¡Bienvenidos al poderoso mundo de .NET! 🖥️🚀
+¡Hola! ¡Felicidades por embarcarte en este emocionante viaje hacia la maestría en desarrollo con .NET!  Diseñamos este curso para llevarte desde los fundamentos hasta aplicaciones más complejas utilizando las tecnologías más avanzadas de .NET.  Juntos, exploraremos desde los conceptos básicos hasta la integración completa de aplicaciones web, paso a paso. Es normal que tengas preguntas a lo largo de este curso, ¡pero no te preocupes! Estaremos avanzando gradualmente para que puedas comprender cada tema y aplicarlo con confianza.
+
+Estructura del curso:
+
+El curso se desarrollará en cinco módulos principales, cada uno diseñado para llevarte de un nivel básico a un nivel más avanzado en el desarrollo con .NET:
+
+PORTADA CURSOS.png
+
+Módulo 1 - Introducción a .NET:
+
+¿Qué es .NET?: Descubre el marco de trabajo .NET y su importancia en el desarrollo de aplicaciones modernas.
+Instalación de Visual Studio: Configura tu entorno de desarrollo con Visual Studio, la herramienta principal para trabajar con .NET.
+
+C#: Aprende los fundamentos de C#, desde la sintaxis básica hasta la creación de programas simples.
+
+Fundamentos de POO: Introducción a la Programación Orientada a Objetos, un paradigma clave en el desarrollo con .NET.
+
+
+Módulo 2 - Desarrollo de Servicios y APIs RESTful:
+
+¿Qué es una API?: Comprende el concepto de API y su rol fundamental en la integración de sistemas.
+
+.NET: APIs Mínimas: Aprende a crear APIs ligeras y rápidas con el enfoque de APIs mínimas en .NET.
+
+.NET: APIs Basadas en Controladores: Descubre cómo estructurar y desarrollar APIs más complejas utilizando controladores en .NET.
+
+
+Módulo 3 - Integración con Bases de Datos y Almacenamiento:
+
+Integración con Bases de Datos y Almacenamiento: Explora las diversas opciones de almacenamiento y cómo integrarlas en aplicaciones .NET.
+
+Introducción a Entity Framework Core: Familiarízate con los fundamentos de este ORM y cómo simplifica el trabajo con bases de datos.
+
+Configuración y Conexión a Bases de Datos: Configura tu entorno y establece conexiones robustas con diferentes bases de datos.
+
+Modelado de Datos y Migraciones: Aprende a modelar datos y a gestionar cambios en la estructura de tu base de datos mediante migraciones.
+
+Consultas y LINQ: Descubre cómo realizar consultas complejas y flexibles utilizando LINQ en Entity Framework Core.
+Transacciones y Control de Concurrencia: Asegura la integridad de tus datos gestionando transacciones y controlando la concurrencia de manera efectiva.
+
+
+Módulo 4 - Autenticación en ASP.NET Core:
+
+Autenticación en ASP.NET Core: Descubre cómo configurar y gestionar la autenticación en aplicaciones ASP.NET Core.
+
+Conceptos Básicos de Seguridad en Web: Explora los principios fundamentales de la seguridad en aplicaciones web y su importancia.
+
+Diferencias entre Autenticación y Autorización: Entiende claramente la diferencia entre estos dos conceptos clave y cómo se aplican en ASP.NET Core.
+
+Métodos Comunes de Autenticación: Conoce los diferentes métodos de autenticación utilizados en el desarrollo web moderno.
+Token-Based Authentication: Aprende sobre la autenticación basada en tokens, una técnica ampliamente utilizada para gestionar sesiones de usuario.
+
+Implementación en ASP.NET Core: Pon en práctica los conocimientos adquiridos implementando sistemas de autenticación en tus proyectos ASP.NET Core.
+
+
+Módulo 5 - Integración de API con Front-end en Blazor:
+
+¿Qué es Blazor?: Introducción a Blazor, una tecnología que permite crear aplicaciones web con C# y .NET.
+Características Clave: Descubre las principales características de Blazor que lo hacen una opción poderosa para el desarrollo web.
+
+Historia y Evolución: Aprende sobre la evolución de Blazor y cómo ha llegado a ser una herramienta clave en el desarrollo web moderno.
+
+Blazor en .NET 8: Conoce las novedades y mejoras de Blazor en la versión más reciente de .NET.
+
+Tipos de Blazor: Explora los diferentes tipos de Blazor (Blazor Server y Blazor WebAssembly) y cuándo usar cada uno.
+Proyecto Final
+
+Al final del curso, tendrás la oportunidad de aplicar lo que has aprendido en un Proyecto Final. Este proyecto no será obligatorio, pero funcionará como una excelente forma de integrar todos los conocimientos adquiridos.
+
+Si decides entregar el proyecto final, será evaluado, y se tendrá en cuenta para posibles recomendaciones en oportunidades laborales futuras.
+
+ 
+
+¡Estamos emocionados de acompañarte en este viaje de aprendizaje! Siéntete libre de participar, hacer preguntas y compartir tus ideas. ¡Vamos a explorar el poder de .NET juntos! 🎉💻
+
+
+****************
+
+
+COMO PROGRAMAR EN VS CODE ?
+
+
+https://code.visualstudio.com/
+
+
+
+***************
+
+
+
+C#
+
+
+ C# es un lenguaje de programación moderno, innovador, de
+código abierto, multiplataforma orientado a objetos y uno de los 5
+principales lenguajes de programación de GitHub.
+
+
+ Scott Hanselman y David Fowler, conocido ingeniero de .NET,
+nos enseñan C# desde cero:
+
+
+https://learn.microsoft.com/es-mx/shows/csharp-for-beginners/
+
+
+ 
+
+*****************
+
+
+
+
+
+Fundamentos de POO con C#  
+
+
+ Este paradigma facilita la creación de software modular,
+reutilizable y fácil de mantener.
+
+ Al estructurar el código en objetos, los desarrolladores
+pueden trabajar de manera más intuitiva y cercana a la
+forma en que perciben el mundo real, donde los objetos
+interactúan entre sí.
+
+ Es ampliamente utilizada en la industria del software
+debido a su capacidad para manejar sistemas complejos y
+su compatibilidad con prácticas de desarrollo ágiles.
+ Las características de la POO han sido implementadas en
+muchos lenguajes de programación populares, como Java,
+C++, Python y C#
+
+ Esto ha contribuido a su adopción y popularidad en una
+variedad de aplicaciones, desde el desarrollo de software
+empresarial hasta los videojuegos y aplicaciones móviles.
+
+En esta serie de artículos verás:
+
+• La Programacion orientada a objetos (POO) y el
+diseño orientado a objetos (DOO)
+• Los requerimientos: funcionales y no funcionales
+• Objetos y clases
+• Tipos de datos en C#: Por valor y por referencia
+• Constructores
+• Signaturas e Interfaces
+• Clases especiales: estáticas y abstractas
+• Modificadores de acceso
+• Los 4 Pilares de la POO: Herencia, abstracción,
+encapsulamiento y polimorfismo
+• Los Principios SOLID
+
+
+https://bravedeveloper.com/2022/06/27/fundamentos-de-la-poo-con-c-la-programacion-poo-y-el-diseno-orientado-a-objetos-ddo/
+
+
+
+
+//////////////////////////////////
+
+
+
+
+La Programación Orientada a Objetos
+
+
+Es un paradigma de programación que hace uso de los llamados OBJETOS para modelar cosas del mundo real, sean animados o no, tangibles o intangibles.
+
+Estos objetos se definen por medio de CLASES, las cuales son como plantillas o planos que permiten crear objetos, por lo tanto definen la información y la funcionalidad que los objetos poseerán.
+
+Esto quiere decir que una clase permite crear muchos objetos los cuales comparten características en común.
+
+La POO se aprovecha de la familiaridad que los seres humanos tenemos con los objetos del mundo real para poder modelar aplicaciones informáticas de forma intuitiva y efectiva, y de esta forma dar solución a problemas de la realidad mediante una solución basada en software.
+
+Este paradigma se vale de 4 pilares los cuales, como su nombre lo indica sostiene toda esta teoría y técnica. Estos 4 pilares son los siguientes:
+
+Herencia: Técnica que permite compartir funcionalidades entre clases valiéndose de la reusabilidad del código, haciendo de nuestro software un producto más mantenible en el tiempo.
+
+Abstracción: Técnica mediante la cual una clase capta las características y funcionalidades de un objeto y las presenta a través de campos y métodos hacia las demás clases que las requieran, descartando toda información que no sea relevante.
+
+Encapsulamiento: Consiste en ocultar el código de los campos o métodos de una clase a las clases que estén requiriendo dicha información, permite a la clase funcionar a modo de caja negra.
+
+Polimorfismo: Permite procesar objetos de forma diferenciada según su clase.
+
+
+Aquí he dado definiciones cortas y al grano, ya que estos pilares tendrán su propia entrada en esta serie.
+
+
+
+Diseño Orientado a Objetos
+
+
+Conjunto de principios de diseño de software que permiten utilizar los conceptos y herramientas de la Programación orientada a objetos (POO) de manera tal que nuestro software sea hecho mediante buenas prácticas resultando un producto correctamente programado, mantenible y sostenible en el tiempo.
+
+Este diseño postula que modelemos como objetos los problemas y de esta forma tengamos nuestro software ordenado y organizado a modo de piezas de un rompecabezas que sean lo suficientemente pequeñas y definidas que sean óptimas, manejables y fáciles de trabajar.
+
+Este diseño orientado a objetos se basa en cinco principios conocidos por el acrónimo SOLID, aquí una definición de cada uno de ellos. No ahondaré en mucho detalle ya que ellos tendrán su propio artículo:
+
+Single Responsibility: El principio de responsabilidad única postula que un módulo debe tener una única responsabilidad, es decir un método de una clase debe tener una sola función bien definida.
+
+Open/Close: El principio abierto cerrado nos dice que un módulo debe ser flexible y estar abierto a la extensión mediante otro módulo y cerrado a la modificación en el mismo módulo.
+
+Liskov Substitution: Este principio nos indica que sólo debemos heredar de una clase para añadir funcionalidades, nunca para modificar las existentes.
+
+Interface Segregation: Nuestras interfaces deben ser cohesivas, es decir deben tener sólo los miembros necesarios para su función y responsabilidad.
+
+Dependency Inversion: Nuestros módulos deben tener bajo acoplamiento, es decir un módulo de alto nivel no debe depender de uno de bajo nivel, sino que ambos deben depender de abstracciones.
+
+
+
+En conclusión
+
+
+Mientras que la POO nos da las herramientas para modelar nuestro software de forma intuitiva, el DOO nos dice cómo hacerlo bien mediante buenas prácticas de software.
+
+
+
+
+*****************************
+
+
+
+
+Bienvenidos al Módulo 2: Desarrollo de APIs en .NET! 🌐🔗
+
+
+En este módulo, nos adentraremos en el emocionante mundo de las APIs, una pieza clave en el desarrollo de aplicaciones modernas que permite la comunicación entre diferentes sistemas y servicios. Exploraremos qué es una API, su importancia, y cómo construir APIs en .NET utilizando dos enfoques diferentes: APIs mínimas y APIs basadas en controladores. Este módulo te brindará las herramientas necesarias para crear servicios backend eficientes y escalables.
+
+Temario
+
+¿Qué es una API?: Comprende el concepto de API y su rol fundamental en la integración de sistemas.
+
+.NET: APIs Mínimas: Aprende a crear APIs ligeras y rápidas con el enfoque de APIs mínimas en .NET.
+
+.NET: APIs Basadas en Controladores: Descubre cómo estructurar y desarrollar APIs más complejas utilizando controladores en .NET.
+
+Materiales AquiDownload Aqui
+Este módulo te permitirá dominar la creación de APIs en .NET, una habilidad esencial para cualquier desarrollador moderno. ¡Prepárate para conectar y expandir tus aplicaciones! 🚀
+
+
+
+
+¿Qué es una API?
+
+
+Una API (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y
+protocolos que permite a diferentes aplicaciones y servicios comunicarse entre sí.
+ Las API definen cómo se deben hacer las solicitudes y respuestas entre sistemas, facilitando la
+interacción entre software desarrollado de forma independiente.
+
+
+
+A vuelo de pájaro
+
+Las API son esenciales para integrar diferentes servicios, como cuando una app de viaje utiliza
+una API de mapas para mostrar rutas o una tienda en línea utiliza una API de pago para
+procesar transacciones.
+
+
+
+Net: APIs mínimas
+
+Microsoft learn: Creación de una API mínima.
+
+https://learn.microsoft.com/es-es/training/paths/aspnet-core-minimal-api/
+
+
+La API mínima está diseñada para simplificar el proceso de configuración y desarrollo de
+aplicaciones. Utiliza una sintaxis concisa y directa, ideal para aplicaciones
+pequeñas o microservicios.
+
+
+
+.Net: APIs basadas en controladores
+
+
+Microsoft learn: Creación de una API web con controladores de ASP.NET Core
+
+https://learn.microsoft.com/es-es/training/modules/build-web-api-aspnet-core/
+
+
+La API basada en controladores implica la creación de clases de controladores que
+agrupan rutas y solicitudes relacionadas con un aspecto específico de la aplicación, y contienen
+varios métodos de acción. Este enfoque estructurado es más adecuado para aplicaciones grandes y
+complejas.
+
+
+
+
+
+LINK CREACION DE UNA API MINIMA :
+
+https://learn.microsoft.com/es-es/aspnet/core/tutorials/min-web-api?view=aspnetcore-8.0&tabs=visual-studio
+
+
+LINK
+
+Creación de una API web con controladores de ASP.NET Core :
+
+
+https://learn.microsoft.com/es-es/training/modules/build-web-api-aspnet-core/
+
+
+
+
+
+//////////////////
+
+
+
+
+¡Bienvenidos al Módulo 3: Integración con Bases de Datos en .NET! 🗄️💾
+
+
+
+En este módulo, nos sumergiremos en la integración de aplicaciones .NET con bases de datos, un componente esencial para la gestión y almacenamiento de información. Aprenderás a utilizar Entity Framework Core, el ORM de .NET, para interactuar con bases de datos de manera eficiente. Desde la configuración inicial hasta el manejo de transacciones y control de concurrencia, este módulo te equipará con las habilidades necesarias para gestionar datos de manera segura y efectiva en tus aplicaciones.
+
+Temario
+
+Integración con Bases de Datos y Almacenamiento: Explora las diversas opciones de almacenamiento y cómo integrarlas en aplicaciones .NET.
+
+Introducción a Entity Framework Core: Familiarízate con los fundamentos de este ORM y cómo simplifica el trabajo con bases de datos.
+
+Configuración y Conexión a Bases de Datos: Configura tu entorno y establece conexiones robustas con diferentes bases de datos.
+
+Modelado de Datos y Migraciones: Aprende a modelar datos y a gestionar cambios en la estructura de tu base de datos mediante migraciones.
+
+Consultas y LINQ: Descubre cómo realizar consultas complejas y flexibles utilizando LINQ en Entity Framework Core.
+
+Transacciones y Control de Concurrencia: Asegura la integridad de tus datos gestionando transacciones y controlando la concurrencia de manera efectiva.
+
+ 
+
+Este módulo es clave para construir aplicaciones robustas y escalables que gestionen datos de manera confiable. ¡Prepárate para dominar la interacción con bases de datos en .NET! 🚀
+
+
+
+
+INTRODUCCIÓN A ENTITY FRAMEWORK CORE
+
+
+Entity Framework (EF) Core es una versión ligera,
+extensible, de código abierto y multiplataforma de la
+popular tecnología de acceso a datos Entity
+Framework.
+
+Un ORM (Object Relational Mapper) es una técnica
+que crea un "puente" entre programas orientados a
+objetos y, en la mayoría de los casos, bases de datos
+relacionales. Básicamente, un ORM permite
+interactuar con bases de datos utilizando objetos en tu
+lenguaje de programación preferido, los ORMs
+simplifican la interacción con bases de datos al traducir
+instrucciones de programación a sentencias SQL
+comprensibles para el gestor de base de datos.
+
+• Object Relational Mapper: EF Core permite a los
+desarrolladores de .NET trabajar con una base de
+datos usando objetos .NET. Esto significa que
+puedes manipular datos como si fueran objetos en
+lugar de escribir código de acceso a datos
+manualmente.
+
+• Modelo de datos: En EF Core, el acceso a datos se
+realiza mediante un modelo. Un modelo se
+compone de clases de entidad y un objeto de
+contexto que representa una sesión con la base de
+datos. Este objeto de contexto permite consultar y
+guardar datos.
+
+• Consultas: Las instancias de las clases de entidad se
+recuperan de la base de datos mediante Language
+Integrated Query (LINQ).
+
+
+
+CONFIGURACIÓN Y CONEXIÓN A BASES DE DATOS
+
+EF Core es compatible con varios proveedores de bases de datos, algunos de ellos:
+
+• Microsoft SQL Server: Compatible con SQL Server y
+Azure SQL Database, por medio de
+Microsoft.EntityFrameworkCore.SqlServer.
+
+• SQLite: Admite versiones 3.7 en adelante utilizando
+Microsoft.EntityFrameworkCore.Sqlite.
+
+• MySQL: A través del proveedor
+Pomelo.EntityFrameworkCore.MySql.
+
+• PostgreSQL: Utiliza el proveedor
+Npgsql.EntityFrameworkCore.PostgreSQL.
+
+• In-memory database: Para pruebas y desarrollo,
+mediante el proveedor Microsoft.EntityFrameworkCore.InMemory.
+
+
+
+CONFIGURACIÓN Y CONEXIÓN A BASES DE DATOS
+
+Ejemplos de conexiones:
+
+Microsoft SQL Server
+
+.UseSqlServer(“Server=localhost,1433;Initial
+Catalog=baseDeDatos;User
+ID=usuario;Password=contraseña”);
+
+MySQL
+
+.UseMySql(“server=localhost;user=usuario;passwor
+d=contraseña;database=baseDeDatos”,
+serverVersion)
+
+
+
+MODELADO DE DATOS Y MIGRACIONES
+
+• En EF Core, el acceso a datos se realiza mediante un modelo. Este modelo se compone de clases de entidad y un objeto de contexto que representa una 
+sesión con la base de datos.
+
+• Las clases de entidad son representaciones de las tablas en la base de datos. Por ejemplo, si tienes una tabla "Blogs", crearías una clase de entidad llamada Blog.
+
+• Cada propiedad en la clase de entidad corresponde a una columna en la tabla. 
+Por ejemplo:
+
+public class Blog
+{
+public int BlogId { get; set; }
+public string Url { get; set; }
+}
+
+
+
+MODELADO DE DATOS Y MIGRACIONES
+
+
+• Puedes configurar el modelo utilizando Fluent API o Data Annotations.
+
+• Fluent API te permite especificar la configuración sin modificar las clases de entidad. 
+
+Por ejemplo:
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+{
+modelBuilder.Entity<Blog>()
+.Property(b => b.Url)
+.IsRequired();
+}
+
+
+
+MODELADO DE DATOS Y MIGRACIONES
+
+Las migraciones en EF Core son una herramienta esencial para mantener sincronizado el esquema de la base
+de datos con el modelo de datos de tu aplicación.
+
+1. ¿Qué son las migraciones?
+• Las migraciones permiten actualizar el esquema de la base de datos de manera incremental.
+• Cuando cambias el modelo de datos (agregas o quitas entidades o propiedades), creas una migración que
+describe las actualizaciones necesarias.
+
+2. Pasos clave en las migraciones:
+• Generación: EF Core compara el modelo actual con una instantánea anterior y genera archivos de origen para la
+migración.
+• Aplicación: Puedes aplicar las migraciones a la base de datos.
+• Historial: EF Core registra las migraciones aplicadas en una tabla especial.
+
+
+
+CONSULTAS Y LINQ
+
+Las consultas en EF Core se usan para recuperar datos de la base de datos.
+
+1. LINQ y Consultas:
+• EF Core utiliza Language Integrated Query (LINQ) para escribir consultas en C# o el lenguaje .NET
+preferido.
+• Puedes consultar datos basados en el contexto y las clases de entidad.
+
+2. Proceso de Consulta:
+• Creas una representación de la consulta en memoria al usar operadores LINQ.
+• La consulta se envía a la base de datos solo cuando se usan los resultados.
+• Operaciones comunes que envían la consulta a la base de datos incluyen iterar resultados, usar ToList,
+ToArray, Single, Count y equivalentes asincrónicos.
+
+
+
+CONSULTAS Y LINQ
+
+Ejemplo de consulta de lectura:
+
+using (var context = new BloggingContext())
+{
+var blogs = context.Blogs.ToList();
+foreach (var blog in blogs)
+{
+Console.WriteLine($"Blog: {blog.Url}");
+}
+}
+
+
+CONSULTAS Y LINQ
+
+Ejemplo de consulta de escritura:
+
+using (var context = new BloggingContext())
+{
+var newBlog = new Blog
+{
+Url = "https://mynewblog.com"
+};
+context.Blogs.Add(newBlog);
+context.SaveChanges();
+}
+
+
+
+TRANSACCIONES Y CONTROL DE CONCURRENCIA
+
+Las transacciones en EF Core sirven para procesar varias operaciones de base de datos de manera
+atómica.
+
+1. Comportamiento predeterminado de las transacciones:
+
+• Cuando realizas cambios en la base de datos mediante SaveChanges, EF Core los aplica en una
+transacción.
+• Si algún cambio falla, la transacción se revierte y ninguno de los cambios se aplica a la base de datos.
+• Esto garantiza que SaveChanges se complete correctamente o deje la base de datos sin modificaciones en
+caso de error.
+
+
+
+TRANSACCIONES Y CONTROL DE CONCURRENCIA
+
+2. Control manual de transacciones:
+
+• Puedes usar la API DbContext.Database para iniciar, confirmar y revertir transacciones.
+• Ejemplo de uso:
+using var context = new BloggingContext();
+using var transaction = context.Database.BeginTransaction();
+try
+{
+// Realizar cambios en la base de datos
+context.Blogs.Add(new Blog { Url = "https://mynewblog.com" });
+context.SaveChanges();
+// Otros cambios...
+transaction.Commit(); // Confirmar transacción
+}
+catch (Exception)
+{
+// Manejar errores
+}
+
+
+TRANSACCIONES Y CONTROL DE CONCURRENCIA
+
+El control de concurrencia en EF Core garantiza la coherencia de los datos cuando varias instancias de
+aplicaciones modifican la base de datos simultáneamente.
+1. Simultaneidad optimista:
+• EF Core implementa la simultaneidad optimista, que asume que los conflictos de simultaneidad son poco frecuentes.
+• A diferencia de los enfoques pesimistas que bloquean datos por adelantado, la simultaneidad optimista no bloquea,
+sino que verifica si los datos han cambiado desde que se consultaron.
+• Si los datos han cambiado, se notifica a la aplicación para manejarlo (por ejemplo, reintento de operación).
+2. Token de simultaneidad:
+• Configuras una propiedad como un token de simultaneidad en EF Core.
+• Este token se carga y se rastrea al consultar una entidad.
+• Al actualizar o eliminar datos con SaveChanges(), se compara el valor del token en la base de datos con el valor original
+leído por EF Core.
+
+
+
+MATERIAL DE ESTUDIO
+
+• Vídeos tutoriales:
+
+
+• Curso completo de Entity Framework Core – YouTube
+
+https://www.youtube.com/playlist?list=PLesmOrW3mp4i2RdfsPI5R6o5EVacGuovz
+
+• Aprende Entity Framework | Entity Framework Core para Principiantes | cuándo y cómo usarlo (youtube.com)
+
+https://www.youtube.com/watch?v=jpshj-LiRig
+
+
+• CODE FIRST con Entity Framework en .NET (youtube.com)
+
+https://www.youtube.com/watch?v=x1zjZUZJ6UA
+
+
+
+• Documentación y cursos oficiales:
+
+
+• Información general de Entity Framework Core - EF Core | Microsoft Learn
+
+https://learn.microsoft.com/es-es/ef/core/
+
+
+• Entity Framework Core para principiantes | Microsoft Learn
+
+https://learn.microsoft.com/es-es/shows/entity-framework-core-for-beginners/
+
